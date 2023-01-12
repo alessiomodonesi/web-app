@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="http://localhost/wordpress">Home</a>
+                            <a class="nav-link active" aria-current="page" href="http://localhost/wordpress/home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,7 +29,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">User</a></li>
-                                <li><a class="dropdown-item" href="#">Product</a></li>
+                                <li><a class="dropdown-item" href="http://localhost/wordpress/product">Product</a></li>
                                 <li><a class="dropdown-item" href="#">Ingredient</a></li>
                             </ul>
                         </li>
