@@ -1,9 +1,7 @@
 <?php
 
-// DataTables PHP library
 include("../lib/DataTables.php");
 
-// Alias Editor classes so they are easy to use
 use
 	DataTables\Editor,
 	DataTables\Editor\Field;
@@ -13,10 +11,10 @@ use
 // 	DataTables\Editor\Upload,
 // 	DataTables\Editor\Validate,
 // 	DataTables\Editor\ValidateOptions;
-// use DeliciousBrains\WPMDB\Container\Dotenv\Validator;
-// use Illuminate\Support\Str;
+// 	use DeliciousBrains\WPMDB\Container\Dotenv\Validator;
+// 	use Illuminate\Support\Str;
 
-//$db->sql('set names utf8');
+// product table
 Editor::inst($db, 'product', 'ID')
 	->fields(
 		Field::inst('name'),

@@ -4,8 +4,8 @@ var editor;
 $(document).ready(function () {
     // fields dell'editor
     editor = new $.fn.dataTable.Editor({
-        ajax: "../../../EditorPHP/controllers/staff.php",
-        table: "#my-table",
+        ajax: "../EditorPHP/controllers/product.php",
+        table: "#product",
         fields: [{
             label: "Name:",
             name: "name"
@@ -34,9 +34,9 @@ $(document).ready(function () {
     });
 
     // fields della tabella
-    $('#my-table').DataTable({
+    $('#product').DataTable({
         dom: "Bfrtip",
-        ajax: "../../../EditorPHP/controllers/staff.php",
+        ajax: "../EditorPHP/controllers/product.php",
         columns: [
             { data: "name" },
             { data: "price" },

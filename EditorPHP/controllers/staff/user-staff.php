@@ -1,11 +1,10 @@
 <?php
 
-// DataTables PHP library
 include("../lib/DataTables.php");
 
 use
-    DataTables\Editor,
-    DataTables\Editor\Field;
+	DataTables\Editor,
+	DataTables\Editor\Field;
 // DataTables\Editor\Format,
 // DataTables\Editor\Mjoin,
 // DataTables\Editor\Options,
@@ -13,20 +12,20 @@ use
 // DataTables\Editor\Validate,
 // DataTables\Editor\ValidateOptions;
 
-Editor::inst($db, 'product', 'ID')
-    ->fields(
-        Field::inst('product.name'),
-        Field::inst('product.price'),
-        Field::inst('product.description'),
-        Field::inst('product.quantity'),
-        Field::inst('product.nutritional_value'),
-        Field::inst('product.active')
-    )
-    ->debug(true)
-    ->process($_POST)
-    ->json();
+// user table
+Editor::inst($db, 'user', 'ID')
+	->fields(
+		Field::inst('user.name'),
+		Field::inst('user.surname'),
+		Field::inst('user.email'),
+		Field::inst('user.password'),
+		Field::inst('user.active')
+	)
+	->debug(true)
+	->process($_POST)
+	->json();
 
-    /* vecchi fields utili per i vari controlli
+      /* vecchi fields utili per i vari controlli
     Field::inst('objects.first_name')
 			->validator(
 				Validate::notEmpty(
