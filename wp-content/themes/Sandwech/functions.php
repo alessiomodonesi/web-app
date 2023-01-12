@@ -7,7 +7,7 @@ function load_stylesheets()
 	wp_enqueue_style('buttons', get_template_directory_uri() . "/css/default/buttons.bootstrap5.min.css", array(), '2.3.3', 'all');
 	wp_enqueue_style('select', get_template_directory_uri() . "/css/default/select.bootstrap5.min.css", array(), '1.5.0', 'all');
 	wp_enqueue_style('dateTime', get_template_directory_uri() . "/css/default/dataTables.dateTime.min.css", array(), '1.2.0', 'all');
-	wp_enqueue_style('editor_bootstrap', "/Editor/css/editor.bootstrap5.min.css", array(), '2.0.10', 'all');
+	wp_enqueue_style('editor_bootstrap', "/EditorPHP/css/editor.bootstrap5.min.css", array(), '2.0.10', 'all');
 
 	//da non aggiungere insieme a editor_bootstrap_css
 	//wp_enqueue_style('editor', "/Editor/css/editor.dataTables.min.css", array(), '2.0.10', 'all');
@@ -28,7 +28,7 @@ function load_js()
 	//wp_enqueue_script('editor_pippo', get_template_directory_uri() . "/js/edit/dataTables.editor.js", array(), '2.0.10', true);
 	//wp_enqueue_script('editor_bootstrap', get_template_directory_uri() . "/js/edit/editor.bootstrap5.js", array(), '2.0.10', true);
 
-	wp_enqueue_script('editor_pippo', "/Editor/js/dataTables.editor.js", array(), '2.0.10', true);
-	wp_enqueue_script('editor_bootstrap', "/Editor/js/editor.bootstrap5.js", array(), '2.0.10', true);
+	wp_enqueue_script('editor_pippo', "/EditorPHP/js/dataTables.editor.js", array(), '2.0.10', true);
+	wp_enqueue_script('editor_bootstrap', "/EditorPHP/js/editor.bootstrap5.js", array(), '2.0.10', true);
 }
 add_action('wp_enqueue_scripts', 'load_js');

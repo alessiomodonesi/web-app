@@ -3,7 +3,7 @@ var editor; // use a global for the submit and return data rendering in the exam
 
 $(document).ready(function () {
     editor = new $.fn.dataTable.Editor({
-        ajax: "../../../Editor/controllers/staff.php",
+        ajax: "../../../EditorPHP/controllers/staff.php",
         table: "#example",
         fields: [{
             label: "First name:",
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $('#example').DataTable({
         dom: "Bfrtip",
-        ajax: "../../../Editor/controllers/staff.php",
+        ajax: "../../../EditorPHP/controllers/staff.php",
         columns: [
             {
                 data: null, render: function (data, type, row) {

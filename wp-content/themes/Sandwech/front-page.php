@@ -1,31 +1,41 @@
 <?php get_header(); ?>
 
 <body>
-    <h1>Sandwech</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title text-center">Home Page</h1>
+                <hr />
+            </div>
+        </div>
 
-    <table id="example" class="table table-striped" style="width:100%">
-        <thead>
-            <tr>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>Office</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Email</th>
-                <th>Office</th>
-                <th>Salary</th>
-            </tr>
-        </tfoot>
-    </table>
+        <div class="row">
+            <div class="col-12">
+                <table id="example" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Email</th>
+                            <th>Office</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Email</th>
+                            <th>Office</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <hr />
+    </div>
 
-    <!-- <script type="text/javascript" src="<?php //echo get_template_directory_uri(); 
-                                                ?>/js/tables.js"></script> -->
 
     <script type="text/javascript">
         var $ = jQuery;
@@ -34,22 +44,8 @@
         $(document).ready(function() {});
 
         $(window).on('load', function() {
-            /*
-            var jqxhr = $.get("Editor/controllers/prova.php", function(data) {
-                    //alert("success");
-                    rows = JSON.parse(data);
-                    console.log(rows["data"]);
-                })
-                .done(function() {
-                    //alert("second success");
-                })
-                .fail(function() {
-                    alert("error");
-                })
-            */
-
             var editor = new $.fn.dataTable.Editor({
-                ajax: "Editor/controllers/prova.php",
+                ajax: "EditorPHP/controllers/test.php",
                 table: "#example",
                 fields: [{
                         label: "First name:",
@@ -74,20 +70,10 @@
                 ]
             });
 
-
             var table = $('#example').DataTable({
                 dom: "Bfrtip",
-                ajax: "Editor/controllers/prova.php",
-                columns: [
-                    /*{
-                        data: null,
-                        render: function(data, type, row) {
-                            // Combine the first and last names into a single table field
-                            return data.first_name + ' ' + data.last_name;
-                        }
-                    },
-                    */
-                    {
+                ajax: "EditorPHP/controllers/test.php",
+                columns: [{
                         data: "first_name"
                     },
                     {
