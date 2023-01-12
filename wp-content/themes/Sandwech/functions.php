@@ -10,7 +10,7 @@ function load_stylesheets()
 	wp_enqueue_style('editor_bootstrap', "/EditorPHP/css/editor.bootstrap5.min.css", array(), '2.0.10', 'all');
 
 	//da non aggiungere insieme a editor_bootstrap_css
-	//wp_enqueue_style('editor', "/Editor/css/editor.dataTables.min.css", array(), '2.0.10', 'all');
+	//wp_enqueue_style('editor', "/EditorPHP/css/editor.dataTables.min.css", array(), '2.0.10', 'all');
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 //carica correttamente i file .js
