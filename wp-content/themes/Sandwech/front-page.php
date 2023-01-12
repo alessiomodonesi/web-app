@@ -14,21 +14,13 @@
                 <table id="my-table" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
-                            <th>First name</th>
-                            <th>Last name</th>
-                            <th>Email</th>
-                            <th>Office</th>
-                            <th>Salary</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
                         </tr>
                     </thead>
                     <tfoot>
-                        <tr>
-                            <th>First name</th>
-                            <th>Last name</th>
-                            <th>Email</th>
-                            <th>Office</th>
-                            <th>Salary</th>
-                        </tr>
                     </tfoot>
                 </table>
             </div>
@@ -44,49 +36,52 @@
         $(document).ready(function() {});
 
         $(window).on('load', function() {
+            // fields dell'editor
             var editor = new $.fn.dataTable.Editor({
                 ajax: "EditorPHP/controllers/test.php",
                 table: "#my-table",
                 fields: [{
-                        label: "First name:",
-                        name: "first_name"
+                        label: "Name:",
+                        name: "name"
                     },
                     {
-                        label: "Last name:",
-                        name: "last_name"
+                        label: "Price:",
+                        name: "price"
                     },
                     {
-                        label: "Email:",
-                        name: "email"
+                        label: "Description:",
+                        name: "description"
                     },
                     {
-                        label: "Office:",
-                        name: "office"
+                        label: "Quantity:",
+                        name: "quantity"
                     },
                     {
-                        label: "Salary:",
-                        name: "salary"
+                        label: "Nutritional value:",
+                        name: "nutritional_value"
+                    },
+                    {
+                        label: "Active:",
+                        name: "Active"
                     }
                 ]
             });
 
+            // fields della tabella
             var table = $('#my-table').DataTable({
                 dom: "Bfrtip",
                 ajax: "EditorPHP/controllers/test.php",
                 columns: [{
-                        data: "first_name"
+                        data: "name"
                     },
                     {
-                        data: "last_name"
+                        data: "price"
                     },
                     {
-                        data: "email"
+                        data: "description"
                     },
                     {
-                        data: "office"
-                    },
-                    {
-                        data: "salary"
+                        data: "quantity"
                     }
                 ],
                 select: true,

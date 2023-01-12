@@ -20,7 +20,7 @@ $sql_details = array(
 	// Database host
 	"port" => "",
 	// Database connection port (can be left empty for default)
-	"db" => "db_test",
+	"db" => "sandwiches",
 	// Database name
 	"dsn" => "",
 	// PHP DSN extra information. Set as `charset=utf8mb4` if you are using MySQL

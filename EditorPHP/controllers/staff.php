@@ -1,27 +1,33 @@
 <?php
 
-/*
- * Example PHP implementation used for the index.html example
- */
-
 // DataTables PHP library
 include("../lib/DataTables.php");
 
-// Alias Editor classes so they are easy to use
 use
-	DataTables\Editor,
-	DataTables\Editor\Field,
-	DataTables\Editor\Format,
-	DataTables\Editor\Mjoin,
-	DataTables\Editor\Options,
-	DataTables\Editor\Upload,
-	DataTables\Editor\Validate,
-	DataTables\Editor\ValidateOptions;
+    DataTables\Editor,
+    DataTables\Editor\Field;
+// DataTables\Editor\Format,
+// DataTables\Editor\Mjoin,
+// DataTables\Editor\Options,
+// DataTables\Editor\Upload,
+// DataTables\Editor\Validate,
+// DataTables\Editor\ValidateOptions;
 
-// Build our Editor instance and process the data coming from _POST
-Editor::inst($db, 'objects', 'ID')
-	->fields(
-		Field::inst('objects.first_name')
+Editor::inst($db, 'product', 'ID')
+    ->fields(
+        Field::inst('product.name'),
+        Field::inst('product.price'),
+        Field::inst('product.description'),
+        Field::inst('product.quantity'),
+        Field::inst('product.nutritional_value'),
+        Field::inst('product.active')
+    )
+    ->debug(true)
+    ->process($_POST)
+    ->json();
+
+    /* vecchi fields utili per i vari controlli
+    Field::inst('objects.first_name')
 			->validator(
 				Validate::notEmpty(
 					ValidateOptions::inst()
@@ -54,8 +60,4 @@ Editor::inst($db, 'objects', 'ID')
 		Field::inst('objects.start_date')
 			->validator(Validate::dateFormat('Y-m-d'))
 			->getFormatter(Format::dateSqlToFormat('Y-m-d'))
-			->setFormatter(Format::dateFormatToSql('Y-m-d'))
-	)
-	->debug(true)
-	->process($_POST)
-	->json();
+			->setFormatter(Format::dateFormatToSql('Y-m-d')) */

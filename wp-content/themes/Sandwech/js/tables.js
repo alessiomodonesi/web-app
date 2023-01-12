@@ -1,50 +1,47 @@
 var $ = jQuery;
-var editor; // use a global for the submit and return data rendering in the my-tables
+var editor;
 
 $(document).ready(function () {
+    // fields dell'editor
     editor = new $.fn.dataTable.Editor({
         ajax: "../../../EditorPHP/controllers/staff.php",
         table: "#my-table",
         fields: [{
-            label: "First name:",
-            name: "first_name"
-        }, {
-            label: "Last name:",
-            name: "last_name"
-        }, {
-            label: "Position:",
-            name: "position"
-        }, {
-            label: "Office:",
-            name: "office"
-        }, {
-            label: "Extension:",
-            name: "extn"
-        }, {
-            label: "Start date:",
-            name: "start_date",
-            type: "datetime"
-        }, {
-            label: "Salary:",
-            name: "salary"
+            label: "Name:",
+            name: "name"
+        },
+        {
+            label: "Price:",
+            name: "price"
+        },
+        {
+            label: "Description:",
+            name: "description"
+        },
+        {
+            label: "Quantity:",
+            name: "quantity"
+        },
+        {
+            label: "Nutritional value:",
+            name: "nutritional_value"
+        },
+        {
+            label: "Active:",
+            name: "active"
         }
         ]
     });
 
+    // fields della tabella
     $('#my-table').DataTable({
         dom: "Bfrtip",
         ajax: "../../../EditorPHP/controllers/staff.php",
         columns: [
-            {
-                data: null, render: function (data, type, row) {
-                    // Combine the first and last names into a single table field
-                    return data.first_name + ' ' + data.last_name;
-                }
-            },
-            { data: "position" },
-            { data: "office" },
-            { data: "extn" },
-            { data: "start_date" }
+            { data: "name" },
+            { data: "price" },
+            { data: "description" },
+            { data: "quantity" }
         ],
         select: true,
         buttons: [
