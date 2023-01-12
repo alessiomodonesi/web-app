@@ -104,24 +104,22 @@
                     }
                 ],
                 select: true,
+                buttons: [{
+                        extend: "create",
+                        editor: editor
+                    },
+                    {
+                        extend: "edit",
+                        editor: editor
+                    },
+                    {
+                        extend: "remove",
+                        editor: editor
+                    }
+                ]
             });
-
-            // Display the buttons
-            new $.fn.dataTable.Buttons(table, [{
-                    extend: "create",
-                    editor: editor
-                },
-                {
-                    extend: "edit",
-                    editor: editor
-                },
-                {
-                    extend: "remove",
-                    editor: editor
-                }
-            ]);
             table.buttons().container()
-                .appendTo($('.col-md-6:eq(0)', table.table().container()));
+                .appendTo('#example_wrapper .col-md-6:eq(0)');
         });
     </script>
 
