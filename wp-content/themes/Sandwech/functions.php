@@ -20,7 +20,7 @@ function load_js()
 	wp_enqueue_script('jQuery_dataTables', get_template_directory_uri() . "/js/default/jquery.dataTables.min.js", array(), '1.13.1', true);
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . "/js/default/bootstrap.bundle.min.js", array(), '5.1.3', true);
 	wp_enqueue_script('datatables', get_template_directory_uri() . "/js/default/dataTables.bootstrap5.min.js", array(), '1.13.1', true);
-	wp_enqueue_script('buttons', get_template_directory_uri() . "/js/default/buttons.bootstrap5.min.js", array(), '2.3.3', true);
+	// wp_enqueue_script('buttons', get_template_directory_uri() . "/js/default/buttons.bootstrap5.min.js", array(), '2.3.3', true);
 	wp_enqueue_script('buttons_dt', get_template_directory_uri() . "/js/default/dataTables.buttons.min.js", array(), '2.3.3', true);
 	wp_enqueue_script('select', get_template_directory_uri() . "/js/default/dataTables.select.min.js", array(), '1.5.0', true);
 	wp_enqueue_script('dateTime', get_template_directory_uri() . "/js/default/dataTables.dateTime.min.js", array(), '1.2.0', true);

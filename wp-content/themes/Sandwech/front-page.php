@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h1 class="title text-center">Home Page</h1>
+                <h1 class="title text-center">Sandwech</h1>
                 <hr />
             </div>
         </div>
@@ -25,7 +25,6 @@
                 </table>
             </div>
         </div>
-        <hr />
     </div>
 
 
@@ -99,8 +98,6 @@
                     }
                 ]
             });
-            table.buttons().container()
-                .appendTo('#my-table_wrapper .col-md-6:eq(0)');
         });
     </script>
 
