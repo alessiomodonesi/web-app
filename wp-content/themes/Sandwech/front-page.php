@@ -11,7 +11,7 @@
 
         <div class="row">
             <div class="col-12">
-                <table id="example" class="table table-striped" style="width:100%">
+                <table id="my-table" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
                             <th>First name</th>
@@ -46,7 +46,7 @@
         $(window).on('load', function() {
             var editor = new $.fn.dataTable.Editor({
                 ajax: "EditorPHP/controllers/test.php",
-                table: "#example",
+                table: "#my-table",
                 fields: [{
                         label: "First name:",
                         name: "first_name"
@@ -70,7 +70,7 @@
                 ]
             });
 
-            var table = $('#example').DataTable({
+            var table = $('#my-table').DataTable({
                 dom: "Bfrtip",
                 ajax: "EditorPHP/controllers/test.php",
                 columns: [{
@@ -105,7 +105,7 @@
                 ]
             });
             table.buttons().container()
-                .appendTo('#example_wrapper .col-md-6:eq(0)');
+                .appendTo('#my-table_wrapper .col-md-6:eq(0)');
         });
     </script>
 

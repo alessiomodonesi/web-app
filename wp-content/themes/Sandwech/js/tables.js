@@ -1,10 +1,10 @@
 var $ = jQuery;
-var editor; // use a global for the submit and return data rendering in the examples
+var editor; // use a global for the submit and return data rendering in the my-tables
 
 $(document).ready(function () {
     editor = new $.fn.dataTable.Editor({
         ajax: "../../../EditorPHP/controllers/staff.php",
-        table: "#example",
+        table: "#my-table",
         fields: [{
             label: "First name:",
             name: "first_name"
@@ -31,7 +31,7 @@ $(document).ready(function () {
         ]
     });
 
-    $('#example').DataTable({
+    $('#my-table').DataTable({
         dom: "Bfrtip",
         ajax: "../../../EditorPHP/controllers/staff.php",
         columns: [
