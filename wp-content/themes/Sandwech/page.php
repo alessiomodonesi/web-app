@@ -1,5 +1,11 @@
 <?php get_header();
-$login = true; ?>
+$login = true;
+
+require __DIR__ . '/../Sandwech/php/checkLogin.php';
+require __DIR__ . '/../Sandwech/php/login.php';
+session_start();
+$login = verify();//ritorna utente o false
+?>
 
 <body>
     <div class="container-fluid">
