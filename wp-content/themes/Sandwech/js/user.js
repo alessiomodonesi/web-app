@@ -23,7 +23,7 @@ $(window).on('load', function () {
         },
         {
             label: "Active:",
-            name: "Active"
+            name: "active"
         }
         ]
     });
