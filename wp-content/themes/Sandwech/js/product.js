@@ -1,9 +1,8 @@
 var $ = jQuery;
-var editor;
 
-$(document).ready(function () {
+$(window).on('load', function () {
     // fields dell'editor
-    editor = new $.fn.dataTable.Editor({
+    var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/product.php",
         table: "#product",
         fields: [{
@@ -28,26 +27,41 @@ $(document).ready(function () {
         },
         {
             label: "Active:",
-            name: "active"
+            name: "Active"
         }
         ]
     });
 
     // fields della tabella
-    $('#product').DataTable({
+    var table = $('#product').DataTable({
         dom: "Bfrtip",
         ajax: "../EditorPHP/controllers/product.php",
-        columns: [
-            { data: "name" },
-            { data: "price" },
-            { data: "description" },
-            { data: "quantity" }
+        columns: [{
+            data: "name"
+        },
+        {
+            data: "price"
+        },
+        {
+            data: "description"
+        },
+        {
+            data: "quantity"
+        }
         ],
         select: true,
-        buttons: [
-            { extend: "create", editor: editor },
-            { extend: "edit", editor: editor },
-            { extend: "remove", editor: editor }
+        buttons: [{
+            extend: "create",
+            editor: editor
+        },
+        {
+            extend: "edit",
+            editor: editor
+        },
+        {
+            extend: "remove",
+            editor: editor
+        }
         ]
     });
 });
