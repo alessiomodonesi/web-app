@@ -31,7 +31,7 @@ $login = true;
                             <label for="InputPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" name="password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="login">Login</button>
+                        <button type="submit" class="btn btn-outline-dark" id="login">Login</button>
                     </form>
                 </div>
                 <div class="col-4"></div>
@@ -40,6 +40,49 @@ $login = true;
             <!-- Cambiare il valore di $login da false a true -->
         <?php elseif (get_the_title() == "Login" && $login == false) : ?>
             <h5 class="title text-center">Hai già effettuato il login</h5>
+
+        <?php elseif (get_the_title() == "Profile") : ?>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 text-center">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="basic-url" class="form-label">Your vanity URL</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                        <div class="form-text">Example help text goes outside the input group.</div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text">With textarea</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
 
         <?php elseif (get_the_title() == "User" && $login == true) : ?>
             <div class="row">

@@ -18,11 +18,8 @@ function login()
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     $response = curl_exec($curl);
     curl_close($curl);
-    //echo $response;
     if (json_decode($response)->response == true) {
-        //echo "i'm in";
         $_SESSION['id'] = json_decode($response)->userID;
-        //echo $_SESSION['id'];
         return true;
     } else {
         return false;
