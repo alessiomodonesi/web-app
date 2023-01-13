@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header();
+$login = true; ?>
 
 <body>
     <div class="container-fluid">
@@ -9,7 +10,8 @@
                 <hr />
             </div>
         </div>
-        <?php if (get_the_title() == "Login") : ?>
+        <!-- Cambiare il valore di $login da false a true -->
+        <?php if (get_the_title() == "Login" && $login == true) : ?>
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4 text-center">
@@ -28,7 +30,11 @@
                 <div class="col-4"></div>
             </div>
 
-        <?php elseif (get_the_title() == "User") : ?>
+            <!-- Cambiare il valore di $login da false a true -->
+        <?php elseif (get_the_title() == "Login" && $login == false) : ?>
+            <h5 class="title text-center">Hai già effettuato il login</h5>
+
+        <?php elseif (get_the_title() == "User" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="user" class="table table-striped" style="width:100%">
@@ -46,7 +52,7 @@
                 </div>
             </div>
 
-        <?php elseif (get_the_title() == "User-Class") : ?>
+        <?php elseif (get_the_title() == "User-Class" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="user-class" class="table table-striped" style="width:100%">
@@ -63,7 +69,7 @@
                 </div>
             </div>
 
-        <?php elseif (get_the_title() == "Class") : ?>
+        <?php elseif (get_the_title() == "Class" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="class" class="table table-striped" style="width:100%">
@@ -79,7 +85,7 @@
                 </div>
             </div>
 
-        <?php elseif (get_the_title() == "Product") : ?>
+        <?php elseif (get_the_title() == "Product" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="product" class="table table-striped" style="width:100%">
@@ -97,7 +103,7 @@
                 </div>
             </div>
 
-        <?php elseif (get_the_title() == "Product-Ingredient") : ?>
+        <?php elseif (get_the_title() == "Product-Ingredient" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="product-ingredient" class="table table-striped" style="width:100%">
@@ -113,7 +119,7 @@
                 </div>
             </div>
 
-        <?php elseif (get_the_title() == "Ingredient") : ?>
+        <?php elseif (get_the_title() == "Ingredient" && $login == true) : ?>
             <div class="row">
                 <div class="col-12">
                     <table id="ingredient" class="table table-striped" style="width:100%">
@@ -133,7 +139,7 @@
             </div>
 
         <?php else : ?>
-            <h5 class="title text-center">Nessuna tabella disponibile</h5>
+            <h5 class="title text-center">Prima effettua il login</h5>
 
         <?php endif ?>
     </div>
