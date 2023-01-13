@@ -21,14 +21,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/user">User</a>
+                            <a class="nav-link active" href="http://localhost/sandwech/login">Login</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/product">Product</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User/Class
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/user">User</a></li>
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/class">Class</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/user-class">User/Class</a></li>
+                            </ul>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/ingredient">Ingredient</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Product/Ingredient
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/product">Product</a></li>
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/ingredient">Ingredient</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/product-ingredient">Product/Ingredient</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

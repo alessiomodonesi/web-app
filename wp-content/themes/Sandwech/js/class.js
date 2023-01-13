@@ -3,46 +3,28 @@ var $ = jQuery;
 $(window).on('load', function () {
     // fields dell'editor
     var editor = new $.fn.dataTable.Editor({
-        ajax: "../EditorPHP/controllers/user.php",
-        table: "#user",
+        ajax: "../EditorPHP/controllers/class.php",
+        table: "#class",
         fields: [{
-            label: "Name:",
-            name: "name"
+            label: "Year:",
+            name: "year"
         },
         {
-            label: "Surname:",
-            name: "surname"
-        },
-        {
-            label: "Email:",
-            name: "email"
-        },
-        {
-            label: "Password:",
-            name: "password"
-        },
-        {
-            label: "Active:",
-            name: "active"
+            label: "Section:",
+            name: "section"
         }
         ]
     });
 
     // fields della tabella
-    var table = $('#user').DataTable({
+    var table = $('#class').DataTable({
         dom: "Bfrtip",
-        ajax: "../EditorPHP/controllers/user.php",
+        ajax: "../EditorPHP/controllers/class.php",
         columns: [{
-            data: "name"
+            data: "year"
         },
         {
-            data: "surname"
-        },
-        {
-            data: "email"
-        },
-        {
-            data: "password"
+            data: "section"
         }
         ],
         select: true,
