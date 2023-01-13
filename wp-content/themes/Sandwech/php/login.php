@@ -1,6 +1,7 @@
 <?php
 
-function login(){
+function login()
+{
     session_start();
     $url = "http://localhost/food-api/API/user/login.php";
     $curl = curl_init();
@@ -11,24 +12,21 @@ function login(){
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     $data = '
     {
-        "email": "alessio.modonesi@iisviolamarchesini.edu.it",
-        "password": "1234"
+        "email": "admin@gmail.com",
+        "password": "admin"
     }';
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     $response = curl_exec($curl);
     curl_close($curl);
     //echo $response;
-    if(json_decode($response)->response == true){
+    if (json_decode($response)->response == true) {
         //echo "i'm in";
         $_SESSION['id'] = json_decode($response)->userID;
         //echo $_SESSION['id'];
         return true;
-    }
-    else{
-        //echo "i'm in";
+    } else {
         return false;
     }
 }
 
 login();
-?>

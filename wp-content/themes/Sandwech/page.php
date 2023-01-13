@@ -1,10 +1,11 @@
-<?php get_header();
-$login = true;
-
+<?php
 require __DIR__ . '/../Sandwech/php/checkLogin.php';
 require __DIR__ . '/../Sandwech/php/login.php';
-session_start();
-$login = verify();//ritorna utente o false
+
+get_header();
+// session_start();
+// $login = verify();
+$login = true;
 ?>
 
 <body>
@@ -151,5 +152,6 @@ $login = verify();//ritorna utente o false
     </div>
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/<?php echo strtolower(get_the_title()) ?>.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/button.js"></script>
 
     <?php get_footer(); ?>

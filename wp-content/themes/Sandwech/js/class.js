@@ -1,7 +1,6 @@
 var $ = jQuery;
 
 $(window).on('load', function () {
-    // fields dell'editor
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/class.php",
         table: "#class",
@@ -16,9 +15,9 @@ $(window).on('load', function () {
         ]
     });
 
-    // fields della tabella
     var table = $('#class').DataTable({
-        dom: "Bfrtip",
+        //dom: "Bfrtip",
+        lengthChange: false,
         ajax: "../EditorPHP/controllers/class.php",
         columns: [{
             data: "year"
@@ -42,6 +41,12 @@ $(window).on('load', function () {
         }
         ]
     });
+
+    new $.fn.dataTable.Buttons(table, [
+        { extend: "create", editor: editor },
+        { extend: "edit", editor: editor },
+        { extend: "remove", editor: editor }
+    ]);
 
     table.buttons().container()
         .appendTo($('.col-md-6:eq(0)', table.table().container()));
