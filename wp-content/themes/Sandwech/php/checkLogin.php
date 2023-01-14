@@ -1,15 +1,14 @@
 <?php
 
-require __DIR__ . '/login.php';
+include_once dirname(__FILE__) . '/getUser.php';
 
-function verify()
+function checkLogin()
 {
-    if (isset($_SESSION['id'])) {
-        $id = $_SESSION['id'];
-        $data = file_get_contents("http://localhost/food-api/API/user/getUser.php?id=" . $id);
-        $user = $data;
+    if (isset($_SESSION['user_id'])) {
+        $id = $_SESSION['user_id'];
+        $user = getUser($id);
         return $user;
-    } else {
-        return login();
     }
+
+    header("Location: login");
 }

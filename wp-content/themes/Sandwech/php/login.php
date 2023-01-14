@@ -1,29 +1,33 @@
 <?php
 
-function login()
+function login($data)
 {
-    $url = "http://localhost/food-api/API/user/login.php";
-    $curl = curl_init();
+    $url = 'http://localhost/food-api/API/user/login.php';
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_URL, $url); // setta l'url
+    curl_setopt($curl, CURLOPT_POST, true); // specifica che è una post request
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); // ritorna il risultato come stringa
 
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_POST, true);
-    curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json'));
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $headers = array(
+        "Content-Type: application/json",
+        "Content-Lenght: 0",
+    );
 
-    $data = '
-    {
-        "email": "$_POST["email"]",
-        "password": "$_POST["password"]"
-    }';
 
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-    $response = curl_exec($curl);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers); // setta gli headers della request
+
+    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+
+    $responseJson = curl_exec($curl);
+
     curl_close($curl);
 
-    if (json_decode($response)->response == true) {
-        $_SESSION['id'] = json_decode($response)->userID;
-        return true;
+    $response = json_decode($responseJson);
+
+    if ($response->response == true) {
+        $_SESSION['user_id'] = $response->userID;
+        header('Location: http://localhost/sandwech');
     } else {
-        return false;
+        return -1;
     }
 }
