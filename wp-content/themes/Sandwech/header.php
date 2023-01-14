@@ -1,3 +1,8 @@
+<?php
+require __DIR__ . '/../Sandwech/php/checkLogin.php';
+session_start();
+$login = verify();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -23,6 +28,7 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech/login">Login</a>
                         </li>

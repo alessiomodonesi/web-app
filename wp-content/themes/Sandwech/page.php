@@ -1,47 +1,40 @@
-<?php
-require __DIR__ . '/../Sandwech/php/checkLogin.php';
-require __DIR__ . '/../Sandwech/php/login.php';
-
-get_header();
-// session_start();
-// $login = verify();
-$login = true;
-?>
+<?php get_header(); ?>
 
 <body>
     <div class="container-fluid">
 
         <div class="row">
             <div class="col-12">
-                <h1 class="title text-center"><?php echo get_the_title(); ?></h1>
+                <h1 class="title text-center"><?php echo $login; ?></h1>
                 <hr />
             </div>
         </div>
-        <!-- Cambiare il valore di $login da false a true -->
-        <?php if (get_the_title() == "Login" && $login == true) : ?>
+
+        <?php if (get_the_title() == "Login" && $login == false) : ?>
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4 text-center">
-                    <form>
+
+                    <form action="http://localhost/sandwech/wp-content/themes/Sandwech/php/login.php" method="post">
                         <div class="mb-3">
-                            <label for="InputUsername" class="form-label">Username</label>
-                            <input type="text" class="form-control" name="username" required>
+                            <label for="InputEmail" class="form-label">Email</label>
+                            <input type="text" class="form-control" name="email">
                         </div>
                         <div class="mb-3">
                             <label for="InputPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password" required>
+                            <input type="text" class="form-control" name="password">
                         </div>
-                        <button type="submit" class="btn btn-outline-dark" id="login">Login</button>
+                        <button type="submit" class="btn btn-outline-dark">Login</button>
                     </form>
+
                 </div>
                 <div class="col-4"></div>
             </div>
 
-            <!-- Cambiare il valore di $login da false a true -->
-        <?php elseif (get_the_title() == "Login" && $login == false) : ?>
+        <?php elseif (get_the_title() == "Login" && $login == true) : ?>
             <h5 class="title text-center">Hai già effettuato il login</h5>
 
-        <?php elseif (get_the_title() == "Profile") : ?>
+        <?php elseif (get_the_title() == "Profile" && $login == true) : ?>
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4 text-center">

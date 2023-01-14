@@ -2,7 +2,6 @@
 
 function login()
 {
-    session_start();
     $url = "http://localhost/food-api/API/user/login.php";
     $curl = curl_init();
 
@@ -10,14 +9,17 @@ function login()
     curl_setopt($curl, CURLOPT_POST, true);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json', 'Content-Type: application/json'));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
     $data = '
     {
-        "email": "admin@gmail.com",
-        "password": "admin"
+        "email": "$_POST["email"]",
+        "password": "$_POST["password"]"
     }';
+
     curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     $response = curl_exec($curl);
     curl_close($curl);
+
     if (json_decode($response)->response == true) {
         $_SESSION['id'] = json_decode($response)->userID;
         return true;
@@ -25,5 +27,3 @@ function login()
         return false;
     }
 }
-
-login();
