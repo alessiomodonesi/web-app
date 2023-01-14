@@ -1,0 +1,6 @@
+[submodule "food-app"]
+	path = food-app
+	url = https://github.com/alessiomodonesi/food-app.git
+[submodule "food-api"]
+	path = food-api
+	url = https://github.com/alessiomodonesi/food-api.git
