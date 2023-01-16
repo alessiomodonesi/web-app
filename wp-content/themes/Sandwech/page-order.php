@@ -14,6 +14,7 @@
                 <table id="order" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>User</th>
                             <th>Created</th>
                             <th>Pickup</th>

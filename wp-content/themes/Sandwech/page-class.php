@@ -14,6 +14,7 @@
                 <table id="class" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Year</th>
                             <th>Section</th>
                         </tr>

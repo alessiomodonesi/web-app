@@ -15,7 +15,7 @@
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/break">break</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/class">class</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/pickup">pickup</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/pickup_break">pickup_break</a></li>
+                <li class=""><a class="table-list-name" href="http://localhost/sandwech/pickup-break">pickup_break</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/reset">reset</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/status">status</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/user">user</a></li>

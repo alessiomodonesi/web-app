@@ -16,7 +16,7 @@
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/offer">offer</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/order">order</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/product">product</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product_allergen">product_allergen</a>
+                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-allergen">product_allergen</a>
                 </li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-ingredient">product_ingredient</a></li>
                 <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-offer">product_offer</a>

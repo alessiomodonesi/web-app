@@ -4,45 +4,56 @@ $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/user.php",
         table: "#user",
-        fields: [{
-            label: "Name:",
-            name: "name"
-        },
-        {
-            label: "Surname:",
-            name: "surname"
-        },
-        {
-            label: "Email:",
-            name: "email"
-        },
-        {
-            label: "Password:",
-            name: "password"
-        },
-        {
-            label: "Active:",
-            name: "active"
-        }
+        fields: [
+            {
+                label: "ID:",
+                name: "id"
+            },
+            {
+                label: "Name:",
+                name: "name"
+            },
+            {
+                label: "Surname:",
+                name: "surname"
+            },
+            {
+                label: "Email:",
+                name: "email"
+            },
+            {
+                label: "Password:",
+                name: "password"
+            },
+            {
+                label: "Active:",
+                name: "active"
+            }
         ]
     });
 
     var table = $('#user').DataTable({
-        //dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/user.php",
-        columns: [{
-            data: "name"
-        },
-        {
-            data: "surname"
-        },
-        {
-            data: "email"
-        },
-        {
-            data: "password"
-        }
+        columns: [
+            {
+                data: "id"
+            },
+            {
+                data: "name"
+            },
+            {
+                data: "surname"
+            },
+            {
+                data: "email"
+            },
+            {
+                data: "password"
+            },
+            {
+                data: "active"
+            }
         ],
         select: true,
         buttons: [{

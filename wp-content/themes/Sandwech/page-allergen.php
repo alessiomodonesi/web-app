@@ -11,15 +11,11 @@
 
         <div class="row">
             <div class="col-12">
-                <table id="user" class="table table-striped" style="width:100%">
+                <table id="allergen" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Name</th>
-                            <th>Surname</th>
-                            <th>Email</th>
-                            <th>Password</th>
-                            <th>Active</th>
                         </tr>
                     </thead>
                     <tfoot>

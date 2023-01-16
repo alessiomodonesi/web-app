@@ -14,6 +14,7 @@
                 <table id="ingredient" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Price</th>

@@ -4,41 +4,43 @@ $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/product-ingredient.php",
         table: "#product-ingredient",
-        fields: [{
-            label: "Product:",
-            name: "product"
-        },
-        {
-            label: "Ingredient:",
-            name: "ingredient"
-        }
+        fields: [
+            {
+                label: "Product:",
+                name: "product"
+            },
+            {
+                label: "Ingredient:",
+                name: "ingredient"
+            }
         ]
     });
 
     var table = $('#product-ingredient').DataTable({
-        //dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/product-ingredient.php",
-        columns: [{
-            data: "product"
-        },
-        {
-            data: "ingredient"
-        }
+        columns: [
+            {
+                data: "product"
+            },
+            {
+                data: "ingredient"
+            }
         ],
         select: true,
-        buttons: [{
-            extend: "create",
-            editor: editor
-        },
-        {
-            extend: "edit",
-            editor: editor
-        },
-        {
-            extend: "remove",
-            editor: editor
-        }
+        buttons: [
+            {
+                extend: "create",
+                editor: editor
+            },
+            {
+                extend: "edit",
+                editor: editor
+            },
+            {
+                extend: "remove",
+                editor: editor
+            }
         ]
     });
 

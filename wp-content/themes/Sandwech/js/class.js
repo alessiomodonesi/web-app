@@ -4,41 +4,50 @@ $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/class.php",
         table: "#class",
-        fields: [{
-            label: "Year:",
-            name: "year"
-        },
-        {
-            label: "Section:",
-            name: "section"
-        }
+        fields: [
+            {
+                label: "ID:",
+                name: "id"
+            },
+            {
+                label: "Year:",
+                name: "year"
+            },
+            {
+                label: "Section:",
+                name: "section"
+            }
         ]
     });
 
     var table = $('#class').DataTable({
-        //dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/class.php",
-        columns: [{
-            data: "year"
-        },
-        {
-            data: "section"
-        }
+        columns: [
+            {
+                data: "id"
+            },
+            {
+                data: "year"
+            },
+            {
+                data: "section"
+            }
         ],
         select: true,
-        buttons: [{
-            extend: "create",
-            editor: editor
-        },
-        {
-            extend: "edit",
-            editor: editor
-        },
-        {
-            extend: "remove",
-            editor: editor
-        }
+        buttons: [
+            {
+                extend: "create",
+                editor: editor
+            },
+            {
+                extend: "edit",
+                editor: editor
+            },
+            {
+                extend: "remove",
+                editor: editor
+            }
         ]
     });
 

@@ -14,10 +14,13 @@
                 <table id="product" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Name</th>
                             <th>Price</th>
                             <th>Description</th>
                             <th>Quantity</th>
+                            <th>Nutritional Value</th>
+                            <th>Active</th>
                         </tr>
                     </thead>
                     <tfoot>

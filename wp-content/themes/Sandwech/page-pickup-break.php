@@ -11,15 +11,11 @@
 
         <div class="row">
             <div class="col-12">
-                <table id="user" class="table table-striped" style="width:100%">
+                <table id="pickup-break" class="table table-striped" style="width:100%">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Surname</th>
-                            <th>Email</th>
-                            <th>Password</th>
-                            <th>Active</th>
+                            <th>Pickup</th>
+                            <th>Break</th>
                         </tr>
                     </thead>
                     <tfoot>
