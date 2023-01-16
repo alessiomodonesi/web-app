@@ -34,9 +34,12 @@ $user = checkLogin();
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost/sandwech/order">Order</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Admin
+                                MNG
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/user">User</a></li>
@@ -48,10 +51,6 @@ $user = checkLogin();
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/product">Product</a></li>
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/ingredient">Ingredient</a></li>
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/product-ingredient">Middle</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/order">Order</a></li>
                             </ul>
                         </li>
                     </ul>
