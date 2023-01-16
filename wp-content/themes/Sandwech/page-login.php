@@ -48,8 +48,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <li class="nav-item">
                             <a class="nav-link disabled" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="http://localhost/sandwech/order">Orders</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Orders
+                            </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false">
