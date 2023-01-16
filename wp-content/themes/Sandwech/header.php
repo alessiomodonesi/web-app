@@ -20,7 +20,7 @@ $user = checkLogin();
 
 <body <?php body_class(); ?>>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand mb-0 h1">Sandwech</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,8 @@ $user = checkLogin();
                             <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Database
+                            <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/user">User</a></li>
@@ -48,6 +48,10 @@ $user = checkLogin();
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/product">Product</a></li>
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/ingredient">Ingredient</a></li>
                                 <li><a class="dropdown-item" href="http://localhost/sandwech/product-ingredient">Middle</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="http://localhost/sandwech/order">Order</a></li>
                             </ul>
                         </li>
                     </ul>

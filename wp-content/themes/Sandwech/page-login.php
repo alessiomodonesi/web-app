@@ -1,6 +1,4 @@
 <?php
-
-get_header();
 include_once dirname(__FILE__) . '/php/login.php';
 session_start();
 $err = "";
@@ -21,12 +19,58 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 ?>
 
-<body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandwech</title>
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
+    <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand mb-0 h1">Sandwech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="http://localhost/sandwech">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="http://localhost/sandwech/profile">Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Database
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12">
+                <h1 class="title text-center"><?php echo get_the_title() ?></h1>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
             <div class="col-4 text-center">
                 <form method="post">
-
                     <div class="mb-3 email">
                         <label for="email" class="form-label">Email Address</label>
                         <input type="email" class="form-control" name="email" placeholder="username@gmail.com">
@@ -39,11 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
 
-                    <button type="submit" class="btn btn-outline-dark login">Login</button>
+                    <button type="submit" class="btn btn-warning">Login</button>
                     <span class="error-login"><?php echo $loginErr ?></span>
-
                 </form>
             </div>
+            <div class="col-4"></div>
         </div>
     </div>
 

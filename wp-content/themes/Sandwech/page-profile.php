@@ -15,10 +15,23 @@ $user = checkLogin();
         <div class="row" style="margin-top: 1vw;">
             <div class="col-4"></div>
             <div class="col-4 text-center">
-                <p class="title text-center"><?php echo $user[0]->name; ?></p>
-                <p class="title text-center"><?php echo $user[0]->surname; ?></p>
-                <p class="title text-center"><?php echo $user[0]->email; ?></p>
-                <a class="btn btn-outline-dark" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/logout.php" role="button">Logout</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Surname</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $user[0]->name; ?></td>
+                            <td><?php echo $user[0]->surname; ?></td>
+                            <td><?php echo $user[0]->email; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="btn btn-warning" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/logout.php" role="button">Logout</a>
             </div>
             <div class=" col-4">
             </div>
