@@ -36,30 +36,11 @@ $user = checkLogin();
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Orders
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/order">Order</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/product-order">Middle</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost/sandwech/vendor">Vendor</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                MNG
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/user">User</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/class">Class</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/user-class">Middle</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/product">Product</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/ingredient">Ingredient</a></li>
-                                <li><a class="dropdown-item" href="http://localhost/sandwech/product-ingredient">Middle</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="http://localhost/sandwech/mng">MNG</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

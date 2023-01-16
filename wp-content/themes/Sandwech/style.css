@@ -10,5 +10,21 @@ Text Domain: sandwech
 */
 
 .navbar {
-    margin-bottom: 1vw;
+    margin-bottom: 1vw !important;
+}
+
+#table-list {
+    margin-top: 1vh !important;
+}
+
+.table-list-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+}
+
+.table-list-name:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
 }
