@@ -11,6 +11,7 @@ function getArchiveProducts(){
         array_push($products_array, array($product->ID,$product->$prod, $product->Prezzo, $product->Tag));
     }
     echo json_encode($products_array);
+    return $products_array;
 }
 getArchiveProducts();
 ?>
