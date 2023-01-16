@@ -2,9 +2,10 @@
 
 include_once dirname(__FILE__) . '/php/checkLogin.php';
 session_start();
-//$user = checkLogin();
+$user = checkLogin();
 
 ?>
+
 <!doctype html>
 <html lang="en">
 

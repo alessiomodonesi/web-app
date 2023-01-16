@@ -10,5 +10,5 @@ function checkLogin()
         return $user;
     }
 
-    header("Location: login");
+    header("Location: http://localhost/sandwech/login");
 }
