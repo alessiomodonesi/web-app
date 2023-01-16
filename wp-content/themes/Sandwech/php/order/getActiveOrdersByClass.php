@@ -1,27 +1,21 @@
 <?php
 
-function getActiveOrderByClass($id)
+function getActiveOrderByClass()
 {
-    $url = 'http://localhost/food-api/API/order/getActiveOrderByClass.php?ID=' . $id;
+    $url = 'http://localhost/food-api/API/order/getActiveOrdersByClass.php';
 
     if (@file_get_contents($url) === false) {
-        return -1;
-    } else {
-        $json_data = file_get_contents($url);
-        $decode_data = json_decode($json_data);
-        $active_order_data = $decode_data;
-        $order_arr_active = array();
-        foreach ($active_order_data as $order) {
-            $order_record = array(
-                'id' => $order->id,
-                'created' => $order->created,
-                'pickup' => $order->pickup,
-                'break' => $order->break,
-                'status' => $order->status,
-                'json' => $order->json
-            );
-            array_push($order_arr_active, $order_record);
-        }
-        return $order_arr_active;
+        return false;
     }
+    $json = json_decode(file_get_contents($url));
+    $order_active = array();
+    foreach($json as $single_order){
+        array_push($order_active, array($single_order->id_classe, $single_order->anno_classe, $single_order->sezione, $single_order->id_ordine));
+    }
+    //echo json_encode($order_active);
+    return $order_active;
 }
+
+//getActiveOrderByClass();
+
+?>

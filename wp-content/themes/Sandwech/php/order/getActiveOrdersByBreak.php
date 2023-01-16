@@ -12,11 +12,9 @@ function getActiveOrderByBreak()
     foreach($json as $single_order){
         array_push($order_active, array($single_order->Orario_della_ricreazione, $single_order->Id_Ordine, $single_order->Utente));
     }
-    echo json_encode($order_active);
+    //echo json_encode($order_active);
     return $order_active;
 
 }
-
-getActiveOrderByBreak();
-
+//getActiveOrderByBreak();
 ?>
