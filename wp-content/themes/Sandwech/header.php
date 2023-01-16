@@ -36,12 +36,16 @@ $user = checkLogin();
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/vendor">Vendor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/mng">MNG</a>
-                        </li>
+                        <?php if ($user[0]->email == "paninara@gmail.com" || $user[0]->email == "admin@gmail.com") : ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="http://localhost/sandwech/vendor">Vendor</a>
+                            </li>
+                        <? endif ?>
+                        <?php if ($user[0]->email == "mng@gmail.com" || $user[0]->email == "admin@gmail.com") : ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="http://localhost/sandwech/mng">MNG</a>
+                            </li>
+                        <? endif ?>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
