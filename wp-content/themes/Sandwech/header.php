@@ -5,6 +5,7 @@ session_start();
 $user = checkLogin();
 
 ?>
+
 <!doctype html>
 <html lang="en">
 
