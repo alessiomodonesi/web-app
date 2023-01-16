@@ -16,6 +16,7 @@ use
 
 Editor::inst($db, 'product', 'ID')
 	->fields(
+		Field::inst('ID'),
 		Field::inst('name'),
 		Field::inst('price'),
 		Field::inst('description'),

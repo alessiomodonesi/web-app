@@ -7,7 +7,7 @@ $(window).on('load', function () {
         fields: [
             {
                 label: "ID:",
-                name: "id"
+                name: "ID"
             },
             {
                 label: "User:",
@@ -42,7 +42,7 @@ $(window).on('load', function () {
         columns:
             [
                 {
-                    data: "id"
+                    data: "ID"
                 },
                 {
                     data: "user"

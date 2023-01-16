@@ -16,6 +16,7 @@ use
 
 Editor::inst($db, 'class', 'ID')
     ->fields(
+        Field::inst('ID'),
         Field::inst('year'),
         Field::inst('section')
     )

@@ -16,6 +16,7 @@ use
 
 Editor::inst($db, 'order', 'ID')
     ->fields(
+        Field::inst('ID'),
         Field::inst('user'),
         Field::inst('created'),
         Field::inst('pickup'),

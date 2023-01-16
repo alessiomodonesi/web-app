@@ -7,7 +7,7 @@ $(window).on('load', function () {
         fields: [
             {
                 label: "ID:",
-                name: "id"
+                name: "ID"
             },
             {
                 label: "Year:",
@@ -25,7 +25,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/class.php",
         columns: [
             {
-                data: "id"
+                data: "ID"
             },
             {
                 data: "year"

@@ -7,7 +7,7 @@ $(window).on('load', function () {
         fields: [
             {
                 label: "ID:",
-                name: "id"
+                name: "ID"
             },
             {
                 label: "Name:",
@@ -41,7 +41,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/product.php",
         columns: [
             {
-                data: "id"
+                data: "ID"
             },
             {
                 data: "name"

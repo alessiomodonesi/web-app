@@ -16,6 +16,7 @@ use
 
 Editor::inst($db, 'user', 'ID')
 	->fields(
+		Field::inst('ID'),
 		Field::inst('name'),
 		Field::inst('surname'),
 		Field::inst('email'),
