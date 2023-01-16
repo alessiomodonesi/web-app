@@ -1,6 +1,6 @@
 <?php
 
-include_once dirname(__FILE__) . '/php/checkLogin.php';
+include_once dirname(__FILE__) . '/php/login/checkLogin.php';
 session_start();
 $user = checkLogin();
 
@@ -22,7 +22,9 @@ $user = checkLogin();
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0 h1">Sandwech</a>
+                <a class="navbar-brand">
+                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="35" height="30" class="d-inline-block align-text-top">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,7 +37,7 @@ $user = checkLogin();
                             <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/order">Order</a>
+                            <a class="nav-link active" href="http://localhost/sandwech/order">Orders</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">

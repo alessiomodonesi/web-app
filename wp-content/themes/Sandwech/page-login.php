@@ -1,5 +1,5 @@
 <?php
-include_once dirname(__FILE__) . '/php/login.php';
+include_once dirname(__FILE__) . '/php/login/login.php';
 session_start();
 $err = "";
 $loginErr = "";
@@ -34,7 +34,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-                <a class="navbar-brand mb-0 h1">Sandwech</a>
+                <a class="navbar-brand">
+                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="35" height="30" class="d-inline-block align-text-top">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,15 +48,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <li class="nav-item">
                             <a class="nav-link disabled" href="http://localhost/sandwech/profile">Profile</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="http://localhost/sandwech/order">Orders</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle disabled" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Database
+                                MNG
                             </a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit" disabled>Search</button>
                     </form>
                 </div>
             </div>

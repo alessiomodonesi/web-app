@@ -31,7 +31,7 @@ $user = checkLogin();
                         </tr>
                     </tbody>
                 </table>
-                <a class="btn btn-warning" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/logout.php" role="button">Logout</a>
+                <a class="btn btn-warning" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
             </div>
             <div class=" col-4">
             </div>
