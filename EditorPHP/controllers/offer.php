@@ -14,11 +14,11 @@ use
 // 	use DeliciousBrains\WPMDB\Container\Dotenv\Validator;
 // 	use Illuminate\Support\Str;
 
-Editor::inst($db , 'offer', 'ID')
+Editor::inst($db, 'offer', 'ID')
     ->fields(
         Field::inst('ID'),
         Field::inst('price'),
-        Field::inst('`start`'),
+        Field::inst('start'),
         Field::inst('expiry'),
         Field::inst('description')
     )

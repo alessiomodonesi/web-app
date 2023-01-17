@@ -14,10 +14,10 @@ use
 // 	use DeliciousBrains\WPMDB\Container\Dotenv\Validator;
 // 	use Illuminate\Support\Str;
 
-Editor::inst($db , 'product_allergern', 'product')
+Editor::inst($db, 'product_allergen', 'product')
     ->fields(
         Field::inst('product'),
-        Field::inst('allergern')
+        Field::inst('allergen')
     )
     ->debug(true)
     ->process($_POST)
