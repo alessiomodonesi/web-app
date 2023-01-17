@@ -2,29 +2,29 @@ var $ = jQuery;
 
 $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
-        ajax: "../EditorPHP/controllers/product-allergen.php",
-        table: "#product-allergen",
+        ajax: "../EditorPHP/controllers/status.php",
+        table: "#status",
         fields: [
             {
-                label: "Product:",
-                name: "product"
+                label: "ID:",
+                name: "ID"
             },
             {
-                label: "Allergen:",
-                name: "allergen"
+                label: "Description:",
+                name: "description"
             }
         ]
     });
 
-    var table = $('#product-allergen').DataTable({
+    var table = $('#status').DataTable({
         lengthChange: false,
-        ajax: "../EditorPHP/controllers/product-allergen.php",
+        ajax: "../EditorPHP/controllers/status.php",
         columns: [
             {
-                data: "product"
+                data: "ID"
             },
             {
-                data: "allergen"
+                data: "description"
             }
         ],
         select: true,

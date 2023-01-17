@@ -2,29 +2,57 @@ var $ = jQuery;
 
 $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
-        ajax: "../EditorPHP/controllers/break.php",
-        table: "#break",
+        ajax: "../EditorPHP/controllers/reset.php",
+        table: "#reset",
         fields: [
             {
                 label: "ID:",
                 name: "ID"
             },
             {
-                label: "Time:",
-                name: "time"
+                label: "User:",
+                name: "user"
+            },
+            {
+                label: "Password:",
+                name: "password"
+            },
+            {
+                label: "Requested:",
+                name: "requested"
+            },
+            {
+                label: "Expires:",
+                name: "expires"
+            },
+            {
+                label: "Completed:",
+                name: "completed"
             }
         ]
     });
 
-    var table = $('#break').DataTable({
+    var table = $('#reset').DataTable({
         lengthChange: false,
-        ajax: "../EditorPHP/controllers/break.php",
+        ajax: "../EditorPHP/controllers/reset.php",
         columns: [
             {
                 data: "ID"
             },
             {
-                data: "time"
+                data: "user"
+            },
+            {
+                data: "password"
+            },
+            {
+                data: "requested"
+            },
+            {
+                data: "expires"
+            },
+            {
+                data: "completed"
             }
         ],
         select: true,
