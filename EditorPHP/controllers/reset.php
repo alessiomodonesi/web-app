@@ -14,10 +14,10 @@ use
 // 	use DeliciousBrains\WPMDB\Container\Dotenv\Validator;
 // 	use Illuminate\Support\Str;
 
-Editor::inst($db , 'reset', 'ID')
+Editor::inst($db, 'reset', 'ID')
     ->fields(
         Field::inst('ID'),
-        Field::inst('`user`'),
+        Field::inst('user'),
         Field::inst('password'),
         Field::inst('requested'),
         Field::inst('expires'),
