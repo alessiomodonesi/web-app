@@ -27,7 +27,8 @@ $(window).on('load', function () {
             },
             {
                 label: "Completed:",
-                name: "completed"
+                name: "completed",
+                def: "0"
             }
         ]
     });

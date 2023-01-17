@@ -27,7 +27,8 @@ $(window).on('load', function () {
             },
             {
                 label: "Active:",
-                name: "active"
+                name: "active",
+                def: "1"
             }
         ]
     });

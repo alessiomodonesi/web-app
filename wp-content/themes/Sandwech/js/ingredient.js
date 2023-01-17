@@ -23,7 +23,8 @@ $(window).on('load', function () {
             },
             {
                 label: "Extra:",
-                name: "extra"
+                name: "extra",
+                def: "0"
             },
             {
                 label: "Quantity:",
