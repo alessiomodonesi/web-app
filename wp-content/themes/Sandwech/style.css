@@ -17,13 +17,14 @@ Text Domain: sandwech
     margin-top: 1vh !important;
 }
 
-.table-list-name {
+.btn-list {
     padding: .3vw !important;
     margin-top: .5vh !important;
     margin-bottom: .5vh !important;
+    width: 100% !important;
 }
 
-.table-list-name:hover {
+.btn-list:hover {
     font-weight: bold;
 }
 
