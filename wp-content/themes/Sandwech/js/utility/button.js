@@ -8,13 +8,13 @@ $(window).on('load', function () {
     btnCreate.addClass("btn-outline-warning");
     btnCreate.removeClass("dt-button");
 
-    var btnCreate = $(".buttons-edit");
-    btnCreate.addClass("btn");
-    btnCreate.addClass("btn-outline-warning");
-    btnCreate.removeClass("dt-button");
+    var btnEdit = $(".buttons-edit");
+    btnEdit.addClass("btn");
+    btnEdit.addClass("btn-outline-warning");
+    btnEdit.removeClass("dt-button");
 
-    var btnCreate = $(".buttons-remove");
-    btnCreate.addClass("btn");
-    btnCreate.addClass("btn-outline-warning");
-    btnCreate.removeClass("dt-button");
+    var btnRemove = $(".buttons-remove");
+    btnRemove.addClass("btn");
+    btnRemove.addClass("btn-outline-warning");
+    btnRemove.removeClass("dt-button");
 });
