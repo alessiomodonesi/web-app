@@ -37,17 +37,14 @@ $mng = "mng@gmail.com";
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/profile">Profile</a>
-                        </li>
                         <?php if ($user[0]->email == $vendor || $user[0]->email == $admin) : ?>
                             <li class="nav-item">
-                                <a class="nav-link active" href="http://localhost/sandwech/vendor">Vendor</a>
+                                <a class="nav-link active" href="http://localhost/sandwech/vendite">Vendite</a>
                             </li>
                         <? endif ?>
                         <?php if ($user[0]->email == $mng || $user[0]->email == $admin) : ?>
                             <li class="nav-item">
-                                <a class="nav-link active" href="http://localhost/sandwech/mng">MNG</a>
+                                <a class="nav-link active" href="http://localhost/sandwech/management">Management</a>
                             </li>
                         <? endif ?>
                     </ul>

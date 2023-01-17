@@ -5,16 +5,16 @@ $(window).on('load', function () {
 
     var btnCreate = $(".buttons-create");
     btnCreate.addClass("btn");
-    btnCreate.addClass("btn-outline-warning");
+    btnCreate.addClass("btn-warning");
     btnCreate.removeClass("dt-button");
 
     var btnEdit = $(".buttons-edit");
     btnEdit.addClass("btn");
-    btnEdit.addClass("btn-outline-warning");
+    btnEdit.addClass("btn-warning");
     btnEdit.removeClass("dt-button");
 
     var btnRemove = $(".buttons-remove");
     btnRemove.addClass("btn");
-    btnRemove.addClass("btn-outline-warning");
+    btnRemove.addClass("btn-warning");
     btnRemove.removeClass("dt-button");
 });

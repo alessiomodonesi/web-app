@@ -43,16 +43,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="http://localhost/sandwech">Home</a>
+                            <a class="nav-link disabled" href="http://localhost/sandwech">Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="http://localhost/sandwech/profile">Profile</a>
+                            <a class="nav-link disabled" href="http://localhost/sandwech/vendite">Vendite</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="http://localhost/sandwech/profile">Vendor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="http://localhost/sandwech/profile">MNG</a>
+                            <a class="nav-link disabled" href="http://localhost/sandwech/management">Management</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

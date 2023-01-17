@@ -10,24 +10,27 @@ Text Domain: sandwech
 */
 
 .navbar {
-    margin-bottom: 1vh !important;
-}
-
-#table-list {
-    margin-top: 1vh !important;
-}
-
-.btn-list {
-    padding: .3vw !important;
-    margin-top: .5vh !important;
-    margin-bottom: .5vh !important;
-    width: 100% !important;
+    margin-bottom: 1vh;
 }
 
 .logo {
-    margin-bottom: 3vh !important;
+    margin-bottom: 3vh;
+}
+
+#table-list {
+    margin-top: 1vh;
+}
+
+.btn-list {
+    width: 100%;
+    margin-top: .5vh;
+    margin-bottom: .5vh;
+}
+
+.btn-list:hover {
+    font-weight: bold;
 }
 
 .logout {
-    margin-top: 1vw !important;
+    margin-top: 1vw;
 }
