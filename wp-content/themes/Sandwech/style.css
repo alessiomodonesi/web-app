@@ -1,7 +1,7 @@
 /*
 Theme Name: Sandwech
-Author: Alessio Modonesi
-Description: Sandwech web app
+Author: Modonesi, Gallinaro, Toso, Rigolin
+Description: Sandwech Web App
 Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 5.6
@@ -10,7 +10,7 @@ Text Domain: sandwech
 */
 
 .navbar {
-    margin-bottom: 1vw !important;
+    margin-bottom: 1vh !important;
 }
 
 #table-list {
@@ -18,13 +18,19 @@ Text Domain: sandwech
 }
 
 .table-list-name {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2vw;
+    padding: .3vw !important;
+    margin-top: .5vh !important;
+    margin-bottom: .5vh !important;
 }
 
 .table-list-name:hover {
-    text-decoration: underline;
     font-weight: bold;
-    color: black;
+}
+
+.logo {
+    margin-bottom: 3vh !important;
+}
+
+.logout {
+    margin-top: 1vw !important;
 }

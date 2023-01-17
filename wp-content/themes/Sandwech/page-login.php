@@ -73,6 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4 text-center">
+                <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="120" height="100" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="mb-3 email">
                         <label for="email" class="form-label">Email Address</label>

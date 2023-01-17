@@ -10,8 +10,8 @@
 
     <div class="row">
         <div class="col-2"></div>
-        <div class="col-8 text-center">
-            <?php echo the_content() ?>
+        <div class="col-8 text-center" style="margin-top: 3vh !important;">
+            <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="200" height="180" class="d-inline-block align-text-top logo">
         </div>
         <div class="col-2"></div>
     </div>

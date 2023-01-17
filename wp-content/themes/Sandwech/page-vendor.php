@@ -11,25 +11,19 @@
     <div class="row">
         <div class="col-2">
             <ul id="table-list">
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/ingredient">ingredient</a>
-                </li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/offer">offer</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/order">order</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product">product</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-allergen">product_allergen</a>
-                </li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-ingredient">product_ingredient</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-offer">product_offer</a>
-                </li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-order">product_order</a>
-                </li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/product-tag">product_tag</a></li>
-                <li class=""><a class="table-list-name" href="http://localhost/sandwech/tag">tag</a></li>
-                </li>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/ingredient" role="button">ingredient</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/offer" role="button">offer</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/order" role="button">order</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product" role="button">product</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product-allergen" role="button">product_allergen</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product-ingredient" role="button">product_ingredient</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product-offer" role="button">product_offer</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product-order" role="button">product_order</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/product-tag" role="button">product_tag</a>
+                <a class="btn btn-warning table-list-name" href="http://localhost/sandwech/tag" role="button">tag</a>
             </ul>
         </div>
-        <div class="col-8"></div>
-        <div class="col-2"></div>
+        <div class="col-10"></div>
     </div>
 </div>
 

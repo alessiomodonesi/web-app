@@ -15,6 +15,7 @@ $user = checkLogin();
         <div class="row" style="margin-top: 1vw;">
             <div class="col-4"></div>
             <div class="col-4 text-center">
+                <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="120" height="100" class="d-inline-block align-text-top logo">
                 <table class="table">
                     <thead>
                         <tr>
@@ -31,7 +32,7 @@ $user = checkLogin();
                         </tr>
                     </tbody>
                 </table>
-                <a class="btn btn-warning" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
+                <a class="btn btn-warning logout" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
             </div>
             <div class=" col-4">
             </div>
