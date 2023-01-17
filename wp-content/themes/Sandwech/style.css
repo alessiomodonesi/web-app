@@ -24,10 +24,6 @@ Text Domain: sandwech
     width: 100% !important;
 }
 
-.btn-list:hover {
-    font-weight: bold;
-}
-
 .logo {
     margin-bottom: 3vh !important;
 }

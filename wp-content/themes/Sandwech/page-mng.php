@@ -9,8 +9,21 @@
     </div>
 
     <div class="row">
-
-        <div class="col-10"></div>
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <ul id="table-list">
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/allergen">allergen</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/break">break</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/class">class</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/pickup">pickup</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/pickup-break">pickup_break</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/reset">reset</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/status">status</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/user">user</a>
+                <a class="btn btn-outline-warning btn-list" href="http://localhost/sandwech/user-class">user_class</a>
+            </ul>
+        </div>
+        <div class="col-4"></div>
     </div>
 </div>
 
