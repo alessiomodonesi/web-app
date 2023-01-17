@@ -1,7 +1,7 @@
 <?php require("page.php"); ?>
 
 <div class="row">
-    <?php require("php/table-list-mng.php"); ?>
+    <?php require("php/table-list-vendite.php"); ?>
     <div class="col-10">
         <table id="allergen" class="table table-striped" style="width:100%">
             <thead>

@@ -64,24 +64,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h1 class="title text-center"><?php echo get_the_title() ?></h1>
+                <h2 class="title text-center"><?php echo get_the_title() ?></h2>
                 <hr />
             </div>
         </div>
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4 text-center">
-                <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="120" height="100" class="d-inline-block align-text-top logo">
+                <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="mb-3 email">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" name="email" placeholder="username@gmail.com">
+                        <input type="email" class="form-control" name="email" placeholder="ruolo@gmail.com">
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
 
                     <div class="mb-3 password">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password" placeholder="password">
+                        <input type="text" class="form-control" name="password" placeholder="password">
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
 

@@ -6,7 +6,7 @@ $user = checkLogin();
 
 // utenti
 $admin = "admin@gmail.com";
-$vendor = "paninara@gmail.com";
+$vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
 ?>
 
@@ -27,7 +27,7 @@ $mng = "mng@gmail.com";
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand">
-                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="35" height="30" class="d-inline-block align-text-top">
+                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="50" height="35" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@ $mng = "mng@gmail.com";
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech">Home</a>
                         </li>
-                        <?php if ($user[0]->email == $vendor || $user[0]->email == $admin) : ?>
+                        <?php if ($user[0]->email == $vendite || $user[0]->email == $admin) : ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="http://localhost/sandwech/vendite">Vendite</a>
                             </li>

@@ -3,7 +3,7 @@
 <div class="container-fluid front-page-content">
     <div class="row">
         <div class="col-12">
-            <h1 class="title text-center"><?php echo get_the_title() ?></h1>
+            <h2 class="title text-center"><?php echo get_the_title() ?></h2>
             <hr />
         </div>
     </div>
