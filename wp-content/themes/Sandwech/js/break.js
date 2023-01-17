@@ -6,10 +6,6 @@ $(window).on('load', function () {
         table: "#break",
         fields: [
             {
-                label: "ID:",
-                name: "ID"
-            },
-            {
                 label: "Time:",
                 name: "time"
             }

@@ -6,10 +6,6 @@ $(window).on('load', function () {
         table: "#allergen",
         fields: [
             {
-                label: "ID:",
-                name: "ID"
-            },
-            {
                 label: "Name:",
                 name: "name"
             }

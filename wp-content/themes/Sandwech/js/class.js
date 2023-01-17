@@ -6,10 +6,6 @@ $(window).on('load', function () {
         table: "#class",
         fields: [
             {
-                label: "ID:",
-                name: "ID"
-            },
-            {
                 label: "Year:",
                 name: "year"
             },

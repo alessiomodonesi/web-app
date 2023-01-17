@@ -6,10 +6,6 @@ $(window).on('load', function () {
         table: "#offer",
         fields: [
             {
-                label: "ID:",
-                name: "ID"
-            },
-            {
                 label: "Price:",
                 name: "price"
             },

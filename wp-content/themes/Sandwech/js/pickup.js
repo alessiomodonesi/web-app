@@ -6,10 +6,6 @@ $(window).on('load', function () {
         table: "#pickup",
         fields: [
             {
-                label: "ID:",
-                name: "ID"
-            },
-            {
                 label: "Name:",
                 name: "name"
             }
