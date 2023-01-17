@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="mb-3 email">
-                        <label for="email" class="form-label">Email Address</label>
+                        <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" placeholder="ruolo@gmail.com">
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
