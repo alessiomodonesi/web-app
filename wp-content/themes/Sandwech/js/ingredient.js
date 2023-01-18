@@ -15,7 +15,8 @@ $(window).on('load', function () {
             },
             {
                 label: "Price:",
-                name: "price"
+                name: "price",
+                def: "0"
             },
             {
                 label: "Extra:",

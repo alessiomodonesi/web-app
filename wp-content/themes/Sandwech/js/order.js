@@ -6,22 +6,6 @@ $(window).on('load', function () {
         table: "#order",
         fields: [
             {
-                label: "Name:",
-                name: "name"
-            },
-            {
-                label: "Surname:",
-                name: "surname"
-            },
-            {
-                label: "Year:",
-                name: "year"
-            },
-            {
-                label: "Section:",
-                name: "section"
-            },
-            {
                 label: "Created:",
                 name: "created"
             },

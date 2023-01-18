@@ -8,10 +8,8 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Surname</th>
+                    <th>Class</th>
                     <th>Email</th>
-                    <th>Password</th>
-                    <th>Active</th>
                 </tr>
             </thead>
             <tfoot>

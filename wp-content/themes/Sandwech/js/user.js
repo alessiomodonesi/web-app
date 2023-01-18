@@ -37,19 +37,17 @@ $(window).on('load', function () {
                 data: "ID"
             },
             {
-                data: "name"
+                data: null, render: function (data) {
+                    return data.name + ' ' + data.surname;
+                }
             },
             {
-                data: "surname"
+                data: null, render: function (data) {
+                    return data.year + data.section;
+                }
             },
             {
                 data: "email"
-            },
-            {
-                data: "password"
-            },
-            {
-                data: "active"
             }
         ],
         select: true,
