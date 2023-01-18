@@ -36,11 +36,11 @@ $mng = "mng@gmail.com";
                             <td><?php echo $user[0]->surname; ?></td>
                             <td><?php echo $user[0]->email; ?></td>
                             <?php if ($user[0]->email == $admin) : ?>
-                                <td>admin</td>
+                                <td>Admin</td>
                             <?php elseif ($user[0]->email == $mng) : ?>
-                                <td>management</td>
+                                <td>Management</td>
                             <?php elseif ($user[0]->email == $vendite) : ?>
-                                <td>vendite</td>
+                                <td>Vendite</td>
                             <? endif ?>
                         </tr>
                     </tbody>
