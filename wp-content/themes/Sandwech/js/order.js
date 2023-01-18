@@ -61,10 +61,10 @@ $(window).on('load', function () {
             ],
         select: true,
         buttons: [
-            {
+            /* {
                 extend: "create",
-                editor: editor
-            },
+                 editor: editor
+            }, */
             {
                 extend: "edit",
                 editor: editor
@@ -77,7 +77,7 @@ $(window).on('load', function () {
     });
 
     new $.fn.dataTable.Buttons(table, [
-        { extend: "create", editor: editor },
+        // { extend: "create", editor: editor },
         { extend: "edit", editor: editor },
         { extend: "remove", editor: editor }
     ]);
