@@ -8,11 +8,11 @@
                 <tr>
                     <th>ID</th>
                     <th>User</th>
+                    <th>Class</th>
                     <th>Created</th>
                     <th>Pickup</th>
                     <th>Break</th>
                     <th>Status</th>
-                    <th>Json</th>
                 </tr>
             </thead>
             <tfoot>

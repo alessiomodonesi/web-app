@@ -21,7 +21,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/class.php",
         columns: [
             {
-                data: "ID"
+                data: "id"
             },
             {
                 data: "year"

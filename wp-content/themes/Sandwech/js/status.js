@@ -17,7 +17,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/status.php",
         columns: [
             {
-                data: "ID"
+                data: "id"
             },
             {
                 data: "description"

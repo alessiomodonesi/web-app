@@ -6,8 +6,20 @@ $(window).on('load', function () {
         table: "#order",
         fields: [
             {
-                label: "User:",
-                name: "user"
+                label: "Name:",
+                name: "name"
+            },
+            {
+                label: "Surname:",
+                name: "surname"
+            },
+            {
+                label: "Year:",
+                name: "year"
+            },
+            {
+                label: "Section:",
+                name: "section"
             },
             {
                 label: "Created:",
@@ -24,10 +36,6 @@ $(window).on('load', function () {
             {
                 label: "Status:",
                 name: "status"
-            },
-            {
-                label: "Json:",
-                name: "json"
             }
         ]
     });
@@ -38,10 +46,17 @@ $(window).on('load', function () {
         columns:
             [
                 {
-                    data: "ID"
+                    data: "id"
                 },
                 {
-                    data: "user"
+                    data: null, render: function (data) {
+                        return data.name + ' ' + data.surname;
+                    }
+                },
+                {
+                    data: null, render: function (data) {
+                        return data.year + data.section;
+                    }
                 },
                 {
                     data: "created"
@@ -54,9 +69,6 @@ $(window).on('load', function () {
                 },
                 {
                     data: "status"
-                },
-                {
-                    data: "json"
                 }
             ],
         select: true,

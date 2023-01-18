@@ -17,7 +17,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/allergen.php",
         columns: [
             {
-                data: "ID"
+                data: "id"
             },
             {
                 data: "name"
