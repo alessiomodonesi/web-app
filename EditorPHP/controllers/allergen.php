@@ -6,9 +6,9 @@ use
     DataTables\Editor,
     DataTables\Editor\Field;
 
-Editor::inst($db, 'allergen', 'id')
+Editor::inst($db, 'allergen', 'ID')
     ->fields(
-        Field::inst('id'),
+        Field::inst('ID'),
         Field::inst('name')
     )
     ->debug(true)

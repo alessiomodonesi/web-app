@@ -17,7 +17,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/tag.php",
         columns: [
             {
-                data: "id"
+                data: "ID"
             },
             {
                 data: "name"

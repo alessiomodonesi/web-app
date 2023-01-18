@@ -34,7 +34,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/user.php",
         columns: [
             {
-                data: "id"
+                data: "ID"
             },
             {
                 data: "name"

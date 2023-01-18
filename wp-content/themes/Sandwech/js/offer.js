@@ -29,7 +29,7 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/offer.php",
         columns: [
             {
-                data: "id"
+                data: "ID"
             },
             {
                 data: "price"
