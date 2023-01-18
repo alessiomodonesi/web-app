@@ -7,8 +7,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Year</th>
-                    <th>Section</th>
+                    <th>Class</th>
                 </tr>
             </thead>
             <tfoot>

@@ -6,8 +6,8 @@ $(window).on('load', function () {
         table: "#reset",
         fields: [
             {
-                label: "User:",
-                name: "user"
+                label: "User ID:",
+                name: "user_ID"
             },
             {
                 label: "Password:",
@@ -37,10 +37,9 @@ $(window).on('load', function () {
                 data: "ID"
             },
             {
-                data: "user"
-            },
-            {
-                data: "password"
+                data: null, render: function (data) {
+                    return data.name + ' ' + data.surname;
+                }
             },
             {
                 data: "requested"

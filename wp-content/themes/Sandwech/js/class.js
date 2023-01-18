@@ -24,11 +24,10 @@ $(window).on('load', function () {
                 data: "ID"
             },
             {
-                data: "year"
+                data: null, render: function (data) {
+                    return data.year + data.section;
+                }
             },
-            {
-                data: "section"
-            }
         ],
         select: true,
         buttons: [

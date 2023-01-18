@@ -6,20 +6,24 @@ $(window).on('load', function () {
         table: "#order",
         fields: [
             {
+                label: "User ID:",
+                name: "user_ID"
+            },
+            {
                 label: "Created:",
                 name: "created"
             },
             {
-                label: "Pickup:",
-                name: "pickup"
+                label: "Pickup ID:",
+                name: "pickup_ID"
             },
             {
-                label: "Break:",
-                name: "break"
+                label: "Break ID:",
+                name: "break_ID"
             },
             {
-                label: "Status:",
-                name: "status"
+                label: "Status ID:",
+                name: "status_ID"
             }
         ]
     });

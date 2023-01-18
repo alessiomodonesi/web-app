@@ -8,7 +8,6 @@
                 <tr>
                     <th>ID</th>
                     <th>User</th>
-                    <th>Password</th>
                     <th>Requested</th>
                     <th>Expires</th>
                     <th>Completed</th>
