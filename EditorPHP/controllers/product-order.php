@@ -8,9 +8,12 @@ use
 
 Editor::inst($db, 'product_order', 'product')
     ->fields(
-        Field::inst('product'),
-        Field::inst('order')
+        Field::inst('product_order.product', 'product_ID'),
+        Field::inst('product_order.order', 'order_ID'),
+        Field::inst('product.name', 'product')
     )
+    ->leftJoin('product', 'product.ID', '=', 'product_order.product')
+    ->leftJoin('order', 'order.ID', '=', 'product_order.order')
     ->debug(true)
     ->process($_POST)
     ->json();

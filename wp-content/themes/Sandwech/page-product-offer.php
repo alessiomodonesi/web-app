@@ -7,7 +7,8 @@
             <thead>
                 <tr>
                     <th>Product</th>
-                    <th>Offer</th>
+                    <th>Price</th>
+                    <th>Description</th>
                 </tr>
             </thead>
             <tfoot>

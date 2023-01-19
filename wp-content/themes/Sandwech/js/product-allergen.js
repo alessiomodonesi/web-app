@@ -6,12 +6,12 @@ $(window).on('load', function () {
         table: "#product-allergen",
         fields: [
             {
-                label: "Product:",
-                name: "product"
+                label: "Product ID:",
+                name: "product_ID"
             },
             {
-                label: "Allergen:",
-                name: "allergen"
+                label: "Allergen ID:",
+                name: "allergen_ID"
             }
         ]
     });

@@ -6,12 +6,12 @@ $(window).on('load', function () {
         table: "#product-order",
         fields: [
             {
-                label: "Product:",
-                name: "product"
+                label: "Product ID:",
+                name: "product_ID"
             },
             {
-                label: "Order:",
-                name: "order"
+                label: "Order ID:",
+                name: "order_ID"
             }
         ]
     });
@@ -24,7 +24,7 @@ $(window).on('load', function () {
                 data: "product"
             },
             {
-                data: "order"
+                data: "order_ID"
             }
         ],
         select: true,
