@@ -9,14 +9,12 @@ $user = checkLogin();
 $admin = "admin@gmail.com";
 $vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-   if($_POST['search'] == null || $_POST['search'] == 'Search'){
-        echo "Please select a name.";
-    }
-     else{
-        //echo (htmlentities($_POST['search']));
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if ($_POST['search'] == null || $_POST['search'] == 'Search')
+        echo "Please select a name";
+    else
         search_page($_POST['search']);
-    }
 }
 
 ?>
