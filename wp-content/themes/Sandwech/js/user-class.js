@@ -6,12 +6,12 @@ $(window).on('load', function () {
         table: "#user-class",
         fields: [
             {
-                label: "User:",
-                name: "user"
+                label: "User ID:",
+                name: "user_ID"
             },
             {
-                label: "Class:",
-                name: "class"
+                label: "Class ID:",
+                name: "class_ID"
             },
             {
                 label: "Year:",
@@ -25,10 +25,14 @@ $(window).on('load', function () {
         ajax: "../EditorPHP/controllers/user-class.php",
         columns: [
             {
-                data: "user"
+                data: null, render: function (data) {
+                    return data.name + ' ' + data.surname;
+                }
             },
             {
-                data: "class"
+                data: null, render: function (data) {
+                    return data.class + data.section;
+                }
             },
             {
                 data: "year"

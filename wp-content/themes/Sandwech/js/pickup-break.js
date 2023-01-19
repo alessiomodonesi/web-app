@@ -6,12 +6,12 @@ $(window).on('load', function () {
         table: "#pickup-break",
         fields: [
             {
-                label: "Pickup:",
-                name: "pickup"
+                label: "Pickup ID:",
+                name: "pickup_ID"
             },
             {
-                label: "Break:",
-                name: "break"
+                label: "Break ID:",
+                name: "break_ID"
             }
         ]
     });
