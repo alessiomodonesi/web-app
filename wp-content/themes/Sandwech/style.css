@@ -45,10 +45,14 @@ body {
     margin-top: 1vw;
 }
 
-/*TEXT*/
+/*TEXT
 
-h2 {
+h2 .title {
     color: blue;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+}*/
+
+.page-link{
+    background-color: brown;
 }
