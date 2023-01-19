@@ -1,6 +1,7 @@
 <?php
 
 include_once dirname(__FILE__) . '/php/login/checkLogin.php';
+include_once dirname(__FILE__) . '/php/search.php';
 session_start();
 $user = checkLogin();
 
@@ -8,6 +9,16 @@ $user = checkLogin();
 $admin = "admin@gmail.com";
 $vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+   if($_POST['search'] == null || $_POST['search'] == 'Search'){
+        echo "Please select a name.";
+    }
+     else{
+        //echo (htmlentities($_POST['search']));
+        search_page($_POST['search']);
+    }
+}
+
 ?>
 
 <!doctype html>
@@ -41,15 +52,15 @@ $mng = "mng@gmail.com";
                             <li class="nav-item">
                                 <a class="nav-link active" href="http://localhost/sandwech/vendite">Vendite</a>
                             </li>
-                        <? endif ?>
+                        <?php endif ?>
                         <?php if ($user[0]->email == $mng || $user[0]->email == $admin) : ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="http://localhost/sandwech/management">Management</a>
                             </li>
-                        <? endif ?>
+                        <?php endif ?>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search" method='post'>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id='search' name='search'>
                         <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
                 </div>

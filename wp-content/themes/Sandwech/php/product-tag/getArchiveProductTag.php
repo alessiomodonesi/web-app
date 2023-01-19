@@ -5,8 +5,8 @@ function getArchiveProductTag(){
         return false;
     }
 
-    $data = json_decode(file_get_contents($url));
-    echo json_encode($data[1]);
+    $data = (file_get_contents($url));
+    echo json_encode($data);
     /*foreach($data[1] as $key){
         echo json_encode($key->product . ' ' . $key->tag . '<br />');
     }*/
