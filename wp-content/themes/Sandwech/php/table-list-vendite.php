@@ -1,5 +1,6 @@
 <div class="col-2">
     <ul id="table-list">
+        <a class="btn btn-warning btn-list" href="http://localhost/sandwech/vendite">Home</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/allergen">Allergen</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/product-allergen" role="button">Product Allergen</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/ingredient" role="button">Ingredient</a>

@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ];
 
         if (login($data) == -1)
-            $loginErr = "Email o password errata";
+            $loginErr = "Credenziali errate";
     } else
         $err = "Campo richiesto";
 }
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body <?php body_class(); ?>>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand">
                     <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="50" height="35" class="d-inline-block align-text-top">
@@ -46,10 +46,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <a class="nav-link active" href="http://localhost/sandwech/login">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/login">Vendite</a>
+                            <a class="nav-link active" href="http://localhost/sandwech/login">Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/login">Management</a>
+                            <a class="nav-link active" href="http://localhost/sandwech/login">Vendite</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -69,24 +69,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4 text-center">
+            <div class="col-4 text-center login-form">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="mb-3 email">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="ruolo@gmail.com">
-                        <span class="error-msg"><?php echo $err ?></span>
+                        <label for="email" class="form-label text-white">Email Address</label>
+                        <input type="email" class="form-control text-center" name="email" placeholder="Enter an email address">
+                        <span class="error-msg text-white"><?php echo $err ?></span>
                     </div>
 
                     <div class="mb-3 password">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="text" class="form-control" name="password" placeholder="password">
-                        <span class="error-msg"><?php echo $err ?></span>
+                        <label for="password" class="form-label text-white">Password</label>
+                        <input type="text" class="form-control text-center" name="password" placeholder="Enter a password">
+                        <span class="error-msg text-white"><?php echo $err ?></span>
                     </div>
 
-                    <button type="submit" class="btn btn-warning">Login</button>
-                    <span class="error-login"><?php echo $loginErr ?></span>
+                    <button type="submit" class="btn btn-light login-btn">Login</button>
                 </form>
+                <span class="error-login text-white"><?php echo $loginErr ?></span>
             </div>
             <div class="col-4"></div>
         </div>

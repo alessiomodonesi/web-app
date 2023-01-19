@@ -9,8 +9,7 @@
     </div>
 
     <div class="row">
-        <?php require("php/home-page-vendite.php"); ?>
-        <div class="col-10"></div>
+        <?php require("php/home-vendite.php"); ?>
     </div>
 </div>
 

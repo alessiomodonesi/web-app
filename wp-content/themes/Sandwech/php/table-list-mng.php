@@ -1,5 +1,6 @@
 <div class="col-2">
     <ul id="table-list">
+        <a class="btn btn-warning btn-list" href="http://localhost/sandwech/management">Home</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/break">Break</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/class">Class</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/reset">Reset</a>
