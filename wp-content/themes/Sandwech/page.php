@@ -10,13 +10,14 @@ $num = count($title);
     <div class="row">
         <div class="col-12">
 
-            <?php if ($num == 0) : ?>
+        <?php if ($num == 0) : ?>
                 <h2 class="title text-center"><?php echo get_the_title(); ?></h2>
 
             <?php else : ?>
                 <h2 class="title text-center"><?php echo "$title[0] $title[1]"; ?></h2>
 
             <?php endif; ?>
+
             <hr />
         </div>
     </div>

@@ -9,7 +9,7 @@
     </div>
 
     <div class="row">
-        <?php require("php/table-list-mng.php"); ?>
+        <?php require("php/home-page-mng.php"); ?>
         <div class="col-10"></div>
     </div>
 </div>
