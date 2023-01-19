@@ -11,7 +11,6 @@
                     <th>Price</th>
                     <th>Description</th>
                     <th>Quantity</th>
-                    <th>Nutritional Value</th>
                     <th>Active</th>
                 </tr>
             </thead>

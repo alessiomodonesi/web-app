@@ -2,6 +2,7 @@
     <ul id="table-list">
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/allergen">Allergen</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/ingredient" role="button">Ingredient</a>
+        <a class="btn btn-warning btn-list" href="http://localhost/sandwech/nutritional-value" role="button">Nutritional Value</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/offer" role="button">Offer</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/order" role="button">Order</a>
         <a class="btn btn-warning btn-list" href="http://localhost/sandwech/product" role="button">Product</a>

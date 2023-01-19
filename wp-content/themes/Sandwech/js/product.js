@@ -22,7 +22,7 @@ $(window).on('load', function () {
                 name: "quantity"
             },
             {
-                label: "Nutritional Value:",
+                label: "Nutritional ID:",
                 name: "nutritional_value"
             },
             {
@@ -51,9 +51,6 @@ $(window).on('load', function () {
             },
             {
                 data: "quantity"
-            },
-            {
-                data: "nutritional_value"
             },
             {
                 data: "active"
