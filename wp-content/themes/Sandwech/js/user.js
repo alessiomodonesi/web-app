@@ -30,6 +30,7 @@ $(window).on('load', function () {
     });
 
     var table = $('#user').DataTable({
+        dom: 'Bfrtip',
         lengthChange: false,
         ajax: "../EditorPHP/controllers/user.php",
         columns: [
@@ -62,15 +63,20 @@ $(window).on('load', function () {
         {
             extend: "remove",
             editor: editor
+        },
+        {
+            extend: 'collection',
+            text: 'Export',
+            buttons: [
+                'copy',
+                'excel',
+                'csv',
+                'pdf',
+                'print'
+            ]
         }
         ]
     });
-
-    new $.fn.dataTable.Buttons(table, [
-        { extend: "create", editor: editor },
-        { extend: "edit", editor: editor },
-        { extend: "remove", editor: editor }
-    ]);
 
     table.buttons().container()
         .appendTo($('.col-md-6:eq(0)', table.table().container()));
