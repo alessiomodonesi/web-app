@@ -58,15 +58,6 @@ Version: 1.0
 }
 
 /* login form */
-/* .login-form {
-    background: radial-gradient(#f49925, #e51c3b);
-    padding: 1vw;
-    padding-bottom: 5vh;
-    border-radius: 10px;
-    box-shadow: 0px 6px 10px rgba(0.5, 0.5, 0.5, 0.5);
-} */
-
-.login-btng,
 .logout-btn {
     margin-top: 1vh;
 }

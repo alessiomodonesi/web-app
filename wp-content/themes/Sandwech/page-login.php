@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ];
 
         if (login($data) == -1)
-            $loginErr = "Credenziali errate";
+            $loginErr = "Email o Password errate";
     } else
         $err = "Campo richiesto";
 }
@@ -72,26 +72,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="col-4 text-center login-form">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
-                    <div class="mb-3 email">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control text-center" name="email" placeholder="username@gmail.com">
+                    <div class="form-floating mb-3 email">
+                        <input type="email" class="form-control" name="email">
+                        <label for="floatingEmail">Email address</label>
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
-
-                    <div class="mb-3 password">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control text-center" name="password" placeholder="password" id="passwd">
+                    <div class="form-floating mb-3 password">
+                        <input type="password" class="form-control" name="password" id="passwd">
+                        <label for="floatingPassword">Password</label>
                         <span class="error-msg"><?php echo $err ?></span>
                     </div>
-
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input position-absolute" onclick="hide()">
                         <label class="form-check-label">Show Password</label>
                     </div>
-
                     <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
+                    <span class="error-login"><?php echo $loginErr ?></span>
                 </form>
-                <span class="error-login"><?php echo $loginErr ?></span>
             </div>
             <div class="col-4"></div>
         </div>

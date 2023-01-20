@@ -21,30 +21,18 @@ $mng = "mng@gmail.com";
             <div class="col-4"></div>
             <div class="col-4 text-center login-form">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Cognome</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Ruolo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><?php echo $user[0]->name; ?></td>
-                            <td><?php echo $user[0]->surname; ?></td>
-                            <td><?php echo $user[0]->email; ?></td>
-                            <?php if ($user[0]->email == $admin) : ?>
-                                <td>Admin</td>
-                            <?php elseif ($user[0]->email == $mng) : ?>
-                                <td>Management</td>
-                            <?php elseif ($user[0]->email == $vendite) : ?>
-                                <td>Vendite</td>
-                            <? endif ?>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul class="list-group">
+                    <li class="list-group-item">Name: <?php echo $user[0]->name; ?></li>
+                    <li class="list-group-item">Surname: <?php echo $user[0]->surname; ?></li>
+                    <li class="list-group-item">Email: <?php echo $user[0]->email; ?></li>
+                    <?php if ($user[0]->email == $admin) : ?>
+                        <li class="list-group-item">Role: admin</li>
+                    <?php elseif ($user[0]->email == $mng) : ?>
+                        <li class="list-group-item">Role: management</li>
+                    <?php elseif ($user[0]->email == $vendite) : ?>
+                        <li class="list-group-item">Role: vendite</li>
+                    <? endif ?>
+                </ul>
                 <a class="btn btn-outline-dark logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
             </div>
             <div class="col-4">
