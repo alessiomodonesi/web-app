@@ -1,5 +1,4 @@
 var $ = jQuery;
-
 $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/user.php",
@@ -77,9 +76,6 @@ $(window).on('load', function () {
         }
         ]
     });
-
-    table.buttons().container()
-        .appendTo($('.col-md-6:eq(0)', table.table().container()));
 });
 
 
