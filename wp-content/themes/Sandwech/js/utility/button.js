@@ -18,8 +18,36 @@ $(window).on('load', function () {
     btnRemove.addClass("btn-warning btn-table");
     btnRemove.removeClass("dt-button");
 
-    var btnExport = $(".buttons-export");
+    // export button
+    // buttons-collection btn btn-warning btn-table
+    var btnExport = $(".buttons-collection");
     btnExport.addClass("btn");
     btnExport.addClass("btn-warning btn-table");
-    btnExport.removeClass("dt-button buttons-collection");
+    btnExport.removeClass("dt-button");
+
+    // export dropdown
+    var btnCopy = $(".buttons-copy.buttons-html5");
+    btnCopy.addClass("btn");
+    btnCopy.addClass("btn-warning btn-table");
+    btnCopy.removeClass("dt-button");
+
+    var btnExcel = $(".buttons-excel.buttons-html5");
+    btnExcel.addClass("btn");
+    btnExcel.addClass("btn-warning btn-table");
+    btnExcel.removeClass("dt-button");
+
+    var btnCsv = $(".buttons-csv.buttons-html5");
+    btnCsv.addClass("btn");
+    btnCsv.addClass("btn-warning btn-table");
+    btnCsv.removeClass("dt-button");
+
+    var btnPdf = $(".buttons-pdf.buttons-html5");
+    btnPdf.addClass("btn");
+    btnPdf.addClass("btn-warning btn-table");
+    btnPdf.removeClass("dt-button");
+
+    var btnPrint = $(".buttons-print");
+    btnPrint.addClass("btn");
+    btnPrint.addClass("btn-warning btn-table");
+    btnPrint.removeClass("dt-button");
 });

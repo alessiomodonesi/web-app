@@ -53,6 +53,7 @@ Text Domain: sandwech
 .btn-table {
     color: white !important;
     background-image: radial-gradient(#f49925, #e51c3b);
+    /* margin-right: 1vw; */
 }
 
 .btn-list:table {
