@@ -17,6 +17,17 @@ Version: 1.0
     border-radius: 50%;
 }
 
+#logoModal {
+    width: 50px;
+    height: 40px;
+}
+
+/* home btn */
+
+.home-btn:hover {
+    background-color: white !important;
+}
+
 /* table list */
 .btn-list {
     width: 100%;
@@ -24,6 +35,12 @@ Version: 1.0
     margin-bottom: .5vh;
     /* color: white !important; */
     /* background-image: radial-gradient(#f49925, #e51c3b); */
+}
+
+.btn-list:hover {
+    font-weight: bold;
+    background-color: white !important;
+    color: black !important;
 }
 
 /* table buttons */
@@ -53,13 +70,36 @@ Version: 1.0
     background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
+.btn-create:hover,
+.btn-edit:hover,
+.btn-remove:hover,
+.btn-export:hover {
+    font-weight: bold;
+    background-color: white !important;
+    color: black !important;
+}
+
 .arrow {
     margin-left: .5vw;
 }
 
 /* login form */
+.login-btn,
 .logout-btn {
     margin-top: 1vh;
+}
+
+.search-btn:hover,
+.login-btn:hover,
+.logout-btn:hover {
+    font-weight: bold;
+    background-color: white !important;
+    color: black !important;
+}
+
+#help-btn {
+    text-decoration: underline;
+    margin-left: 11.5vw !important;
 }
 
 /* card */
@@ -102,6 +142,10 @@ Version: 1.0
     height: 3px;
     background-color: rgba(255, 255, 255, 0.6);
     transition: all 0.5s;
+}
+
+.card__link:hover {
+    color: white !important;
 }
 
 .card__link:hover::after {

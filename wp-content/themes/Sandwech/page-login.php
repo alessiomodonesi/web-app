@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <button class="btn btn-outline-dark search-btn" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h2 class="title text-center"><?php echo get_the_title() ?></h2>
+                <h2 class="title text-center"><?php echo get_the_title(); ?></h2>
                 <hr />
             </div>
         </div>
@@ -75,33 +75,69 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-floating mb-3 email">
                         <input type="email" class="form-control" name="email">
                         <label for="floatingEmail">Email address</label>
-                        <span class="error-msg"><?php echo $err ?></span>
+                        <!-- <span class="error-msg"><?php echo $err ?></span> -->
                     </div>
                     <div class="form-floating mb-3 password">
                         <input type="password" class="form-control" name="password" id="passwd">
                         <label for="floatingPassword">Password</label>
-                        <span class="error-msg"><?php echo $err ?></span>
+                        <!-- <span class="error-msg"><?php echo $err ?></span> -->
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input position-absolute" onclick="hide()">
+                        <input type="checkbox" class="form-check-input" onclick="hidePasswd()">
                         <label class="form-check-label">Show Password</label>
+                        <a onclick="showModal()" id="help-btn">Ho bisogno di aiuto</a>
                     </div>
                     <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
-                    <span class="error-login"><?php echo $loginErr ?></span>
+                    <!-- <span class="error-login"><?php echo $loginErr ?></span> -->
                 </form>
             </div>
             <div class="col-4"></div>
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Accessi</h4>
+                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" id="logoModal">
+                </div>
+                <div class="modal-body">
+                    <h6>Admin</h6>
+                    <p>admin@gmail.com - admin</p>
+                    <hr />
+                    <h6>Management</h6>
+                    <p>mng@gmail.com - mng</p>
+                    <hr />
+                    <h6>Vendite</h6>
+                    <p>vendite@gmail.com - vendite</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" onclick="hideModal()">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        function hide() {
+        var $ = jQuery;
+
+        function hidePasswd() {
             var x = document.getElementById("passwd");
             if (x.type === "password") {
                 x.type = "text";
             } else {
                 x.type = "password";
             }
+        }
+
+        function showModal() {
+            $('#modal').modal('show');
+        }
+
+        function hideModal() {
+            $('#modal').modal('toggle');
         }
     </script>
 

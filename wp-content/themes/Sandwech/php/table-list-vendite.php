@@ -1,6 +1,8 @@
 <div class="col-2">
     <ul id="table-list">
-        <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/vendite">Home</a>
+        <a class="btn btn-outline-dark btn-list home-btn" href="http://localhost/sandwech/vendite">
+            <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/home.png" alt="home" width="25" height="25" class="d-inline-block home-png">
+        </a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/allergen">Allergen</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/product-allergen" role="button">Product Allergen</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/ingredient" role="button">Ingredient</a>

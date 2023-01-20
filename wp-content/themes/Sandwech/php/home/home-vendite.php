@@ -7,7 +7,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 id="h2-cards" class="card__title">Allergen</h2>
       <p class="card__apply">
-        <a class="card__link">Allergen table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione allergeni<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -16,7 +16,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product Allergen</h2>
       <p class="card__apply">
-        <a class="card__link">Middle table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Tabella di mezzo<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -25,7 +25,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Ingredient</h2>
       <p class="card__apply">
-        <a class="card__link">Ingredient table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione ingredienti<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -34,7 +34,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product Ingredient</h2>
       <p class="card__apply">
-        <a class="card__link">Middle table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Tabella di mezzo<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -43,7 +43,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Nutritional Value</h2>
       <p class="card__apply">
-        <a class="card__link">Nutritional table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione valori nutrizionali<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -52,7 +52,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Offer</h2>
       <p class="card__apply">
-        <a class="card__link">Offer table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione offerte<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -61,7 +61,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product Offer</h2>
       <p class="card__apply">
-        <a class="card__link">Middle table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Tabella di mezzo<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -70,7 +70,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Order</h2>
       <p class="card__apply">
-        <a class="card__link">Order table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione ordini<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -79,7 +79,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product Order</h2>
       <p class="card__apply">
-        <a class="card__link">Middle table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Tabella di mezzo<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -88,7 +88,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product</h2>
       <p class="card__apply">
-        <a class="card__link">Product table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione prodotti<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -97,7 +97,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Tag</h2>
       <p class="card__apply">
-        <a class="card__link">Tag table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Gestione categorie<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 
@@ -106,7 +106,7 @@
       <p class="card__exit"><i class="fas fa-times"></i></p>
       <h2 class="card__title">Product Tag</h2>
       <p class="card__apply">
-        <a class="card__link">Middle table<i class="fas fa-arrow-right"></i></a>
+        <a class="card__link">Tabella di mezzo<i class="fas fa-arrow-right"></i></a>
       </p>
     </div>
 

@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </ul>
                     <form class="d-flex" role="search" method='post'>
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id='search' name='search'>
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <button class="btn btn-outline-dark search-btn" type="submit">Search</button>
                     </form>
                 </div>
             </div>
