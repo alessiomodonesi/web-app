@@ -9,7 +9,6 @@ Version: 1.0
 Text Domain: sandwech
 */
 
-
 /* body {
     background-color: whitesmoke !important;
 } */
@@ -25,9 +24,9 @@ Text Domain: sandwech
     font-size: 40px;
 }  */
 
-.raw {
+/* .raw {
     background-color: rgba(244, 244, 244, 0.8);
-}
+} */
 
 .logo {
     margin-top: 2vh;
@@ -50,10 +49,12 @@ Text Domain: sandwech
     color: white !important;
 }
 
-.btn-table {
+.btn-create,
+.btn-edit,
+.btn-remove,
+.btn-export {
     color: white !important;
     background-image: radial-gradient(#f49925, #e51c3b);
-    /* margin-right: 1vw; */
 }
 
 .btn-list:table {

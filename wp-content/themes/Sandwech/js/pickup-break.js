@@ -17,6 +17,7 @@ $(window).on('load', function () {
     });
 
     $('#pickup-break').DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/pickup-break.php",
         columns: [
@@ -39,6 +40,17 @@ $(window).on('load', function () {
         {
             extend: "remove",
             editor: editor
+        },
+        {
+            extend: "collection",
+            text: "Export",
+            buttons: [
+                "copy",
+                "excel",
+                "csv",
+                "pdf",
+                "print"
+            ]
         }
         ]
     });

@@ -17,6 +17,7 @@ $(window).on('load', function () {
     });
 
     $('#product-allergen').DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/product-allergen.php",
         columns: [
@@ -39,6 +40,17 @@ $(window).on('load', function () {
         {
             extend: "remove",
             editor: editor
+        },
+        {
+            extend: "collection",
+            text: "Export",
+            buttons: [
+                "copy",
+                "excel",
+                "csv",
+                "pdf",
+                "print"
+            ]
         }
         ]
     });

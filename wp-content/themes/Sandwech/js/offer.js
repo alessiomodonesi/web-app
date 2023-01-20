@@ -25,6 +25,7 @@ $(window).on('load', function () {
     });
 
     $('#offer').DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/offer.php",
         columns: [
@@ -56,6 +57,17 @@ $(window).on('load', function () {
         {
             extend: "remove",
             editor: editor
+        },
+        {
+            extend: "collection",
+            text: "Export",
+            buttons: [
+                "copy",
+                "excel",
+                "csv",
+                "pdf",
+                "print"
+            ]
         }
         ]
     });

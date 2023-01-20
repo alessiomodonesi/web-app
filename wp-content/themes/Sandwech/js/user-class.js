@@ -21,6 +21,7 @@ $(window).on('load', function () {
     });
 
     $('#user-class').DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/user-class.php",
         columns: [
@@ -51,6 +52,17 @@ $(window).on('load', function () {
             {
                 extend: "remove",
                 editor: editor
+            },
+            {
+                extend: "collection",
+                text: "Export",
+                buttons: [
+                    "copy",
+                    "excel",
+                    "csv",
+                    "pdf",
+                    "print"
+                ]
             }
         ]
     });

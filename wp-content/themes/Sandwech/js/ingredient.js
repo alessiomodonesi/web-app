@@ -31,6 +31,7 @@ $(window).on('load', function () {
     });
 
     $('#ingredient').DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/ingredient.php",
         columns: [
@@ -66,6 +67,17 @@ $(window).on('load', function () {
             {
                 extend: "remove",
                 editor: editor
+            },
+            {
+                extend: "collection",
+                text: "Export",
+                buttons: [
+                    "copy",
+                    "excel",
+                    "csv",
+                    "pdf",
+                    "print"
+                ]
             }
         ]
     });
