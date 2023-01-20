@@ -45,7 +45,7 @@ $mng = "mng@gmail.com";
                         </tr>
                     </tbody>
                 </table>
-                <a class="btn btn-light logout" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
+                <a class="btn btn-light logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
             </div>
             <div class="col-4">
             </div>

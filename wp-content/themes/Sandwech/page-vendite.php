@@ -9,7 +9,7 @@
     </div>
 
     <div class="row">
-        <?php require("php/home-vendite.php"); ?>
+        <?php require("php/home/home-vendite.php"); ?>
     </div>
 </div>
 

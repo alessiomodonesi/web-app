@@ -1,33 +1,14 @@
 /*
 Theme Name: Sandwech
 Author: Modonesi, Gallinaro, Toso, Rigolin
-Description: Sandwech Web App
+Description: Sandwech Theme
 Requires at least: 6.1
 Tested up to: 6.1
 Requires PHP: 5.6
 Version: 1.0
-Text Domain: sandwech
 */
 
-/* body {
-    background-color: whitesmoke !important;
-} */
-
-/* .navbar {
-    background: radial-gradient(#f49925, #e51c3b);
-    margin-bottom: 2vh;
-} */
-
-/* h2 .title {
-    color: blue;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-}  */
-
-/* .raw {
-    background-color: rgba(244, 244, 244, 0.8);
-} */
-
+/* logo */
 .logo {
     margin-top: 2vh;
     margin-bottom: 4vh;
@@ -36,6 +17,7 @@ Text Domain: sandwech
     border-radius: 50%;
 }
 
+/* table list */
 .btn-list {
     width: 100%;
     margin-top: .5vh;
@@ -49,27 +31,48 @@ Text Domain: sandwech
     color: white !important;
 }
 
-.btn-create,
-.btn-edit,
-.btn-remove,
-.btn-export {
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
-}
-
 .btn-list:table {
     font-weight: bold;
     color: white !important;
 }
 
-.logout {
-    margin-top: 1vw;
+/* table buttons */
+.btn-create {
+    margin-right: .5vw;
+    color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b);
 }
 
-.page-link {
-    background-color: brown;
+.btn-edit {
+    margin-left: .5vw;
+    margin-right: .5vw;
+    color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b);
 }
 
+.btn-remove {
+    margin-left: .5vw;
+    margin-right: 1vw;
+    color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b);
+}
+
+.btn-export {
+    margin-left: .5vw;
+    color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b);
+}
+
+.btn-copy,
+.btn-excel,
+.btn-csv,
+.btn-pdf,
+.btn-print {
+    color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b);
+}
+
+/* login form */
 .login-form {
     background: radial-gradient(#f49925, #e51c3b);
     padding: 1vw;
@@ -78,6 +81,86 @@ Text Domain: sandwech
     box-shadow: 0px 6px 10px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
-.login-btn {
+.login-btng,
+.logout-btn {
     margin-top: 1vh;
+}
+
+/* card */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    min-height: 250px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+
+.card__title {
+    grid-row: 3/4;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+.card-1 {
+    background: radial-gradient(#f49925, #e51c3b);
+}
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
 }

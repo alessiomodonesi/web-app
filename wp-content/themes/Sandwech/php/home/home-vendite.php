@@ -1,7 +1,4 @@
-<style>
-  <?php include 'home.css'; ?>
-</style>
-
+<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
 <div class="main-container">
   <div class="cards text-center">
 
