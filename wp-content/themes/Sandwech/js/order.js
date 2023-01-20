@@ -28,7 +28,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#order').DataTable({
+    $('#order').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/order.php",
         columns:

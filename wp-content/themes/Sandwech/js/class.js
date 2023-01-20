@@ -16,7 +16,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#class').DataTable({
+    $('#class').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/class.php",
         columns: [

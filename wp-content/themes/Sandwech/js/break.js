@@ -12,7 +12,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#break').DataTable({
+    $('#break').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/break.php",
         columns: [

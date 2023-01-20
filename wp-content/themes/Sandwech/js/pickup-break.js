@@ -16,7 +16,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#pickup-break').DataTable({
+    $('#pickup-break').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/pickup-break.php",
         columns: [

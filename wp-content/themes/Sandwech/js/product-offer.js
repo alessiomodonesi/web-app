@@ -16,7 +16,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#product-offer').DataTable({
+    $('#product-offer').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/product-offer.php",
         columns: [

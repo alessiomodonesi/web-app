@@ -12,7 +12,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#status').DataTable({
+    $('#status').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/status.php",
         columns: [

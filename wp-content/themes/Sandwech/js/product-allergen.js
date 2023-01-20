@@ -16,7 +16,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#product-allergen').DataTable({
+    $('#product-allergen').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/product-allergen.php",
         columns: [

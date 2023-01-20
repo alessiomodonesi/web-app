@@ -17,4 +17,9 @@ $(window).on('load', function () {
     btnRemove.addClass("btn");
     btnRemove.addClass("btn-warning btn-table");
     btnRemove.removeClass("dt-button");
+
+    var btnExport = $(".buttons-export");
+    btnExport.addClass("btn");
+    btnExport.addClass("btn-warning btn-table");
+    btnExport.removeClass("dt-button buttons-collection");
 });

@@ -20,7 +20,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#user-class').DataTable({
+    $('#user-class').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/user-class.php",
         columns: [

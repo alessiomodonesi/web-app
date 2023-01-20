@@ -12,7 +12,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#allergen').DataTable({
+    $('#allergen').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/allergen.php",
         columns: [

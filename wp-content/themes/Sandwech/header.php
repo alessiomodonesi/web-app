@@ -17,6 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         search_page($_POST['search']);
 }
 
+// if ($user[0]->email == $admin || get_the_title() == 'Login') {
+//     show_admin_bar(false);
+// }
+
 ?>
 
 <!doctype html>

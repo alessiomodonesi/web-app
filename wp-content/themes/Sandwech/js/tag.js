@@ -12,7 +12,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#tag').DataTable({
+    $('#tag').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/tag.php",
         columns: [

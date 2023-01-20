@@ -48,7 +48,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#nutritional-value').DataTable({
+    $('#nutritional-value').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/nutritional-value.php",
         columns: [

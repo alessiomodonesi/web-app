@@ -30,7 +30,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#ingredient').DataTable({
+    $('#ingredient').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/ingredient.php",
         columns: [

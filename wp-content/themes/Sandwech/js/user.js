@@ -1,5 +1,5 @@
 var $ = jQuery;
-$(window).on('load', function () {
+$(window).on("load", function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/user.php",
         table: "#user",
@@ -28,8 +28,8 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#user').DataTable({
-        dom: 'Bfrtip',
+    $("#user").DataTable({
+        dom: "Bfrtip",
         lengthChange: false,
         ajax: "../EditorPHP/controllers/user.php",
         columns: [
@@ -38,7 +38,7 @@ $(window).on('load', function () {
             },
             {
                 data: null, render: function (data) {
-                    return data.name + ' ' + data.surname;
+                    return data.name + " " + data.surname;
                 }
             },
             {
@@ -64,14 +64,14 @@ $(window).on('load', function () {
             editor: editor
         },
         {
-            extend: 'collection',
-            text: 'Export',
+            extend: "collection",
+            text: "Export",
             buttons: [
-                'copy',
-                'excel',
-                'csv',
-                'pdf',
-                'print'
+                "copy",
+                "excel",
+                "csv",
+                "pdf",
+                "print"
             ]
         }
         ]

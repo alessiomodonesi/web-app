@@ -12,7 +12,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#pickup').DataTable({
+    $('#pickup').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/pickup.php",
         columns: [

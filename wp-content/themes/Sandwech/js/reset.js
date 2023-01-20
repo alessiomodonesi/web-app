@@ -29,7 +29,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#reset').DataTable({
+    $('#reset').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/reset.php",
         columns: [

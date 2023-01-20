@@ -33,7 +33,7 @@ $(window).on('load', function () {
         ]
     });
 
-    var table = $('#product').DataTable({
+    $('#product').DataTable({
         lengthChange: false,
         ajax: "../EditorPHP/controllers/product.php",
         columns: [
