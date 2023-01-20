@@ -8,11 +8,11 @@
 
 <style type="text/css">
     table.dataTable.table-striped>tbody>tr.even.selected>* {
-        box-shadow: inset 0 0 0 9999px orange;
+        box-shadow: inset 0 0 0 9999px grey;
     }
 
     table.dataTable.table-striped>tbody>tr.odd.selected>* {
-        box-shadow: inset 0 0 0 9999px orange;
+        box-shadow: inset 0 0 0 9999px grey;
     }
 </style>
 

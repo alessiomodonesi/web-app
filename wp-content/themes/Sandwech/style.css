@@ -22,64 +22,49 @@ Version: 1.0
     width: 100%;
     margin-top: .5vh;
     margin-bottom: .5vh;
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
-}
-
-.btn-list:hover {
-    font-weight: bold;
-    color: white !important;
-}
-
-.btn-list:table {
-    font-weight: bold;
-    color: white !important;
+    /* color: white !important; */
+    /* background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
 /* table buttons */
 .btn-create {
     margin-right: .5vw;
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
+    /* color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
 .btn-edit {
     margin-left: .5vw;
     margin-right: .5vw;
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
+    /* color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
 .btn-remove {
     margin-left: .5vw;
     margin-right: 1vw;
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
+    /* color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
 .btn-export {
     margin-left: .5vw;
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
+    /* color: white !important;
+    background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
-.btn-copy,
-.btn-excel,
-.btn-csv,
-.btn-pdf,
-.btn-print {
-    color: white !important;
-    background-image: radial-gradient(#f49925, #e51c3b);
+.arrow {
+    margin-left: .5vw;
 }
 
 /* login form */
-.login-form {
+/* .login-form {
     background: radial-gradient(#f49925, #e51c3b);
     padding: 1vw;
     padding-bottom: 5vh;
     border-radius: 10px;
     box-shadow: 0px 6px 10px rgba(0.5, 0.5, 0.5, 0.5);
-}
+} */
 
 .login-btng,
 .logout-btn {

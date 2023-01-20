@@ -21,7 +21,7 @@ $mng = "mng@gmail.com";
             <div class="col-4"></div>
             <div class="col-4 text-center login-form">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
-                <table class="table text-white">
+                <table class="table">
                     <thead>
                         <tr>
                             <th scope="col">Nome</th>
@@ -45,7 +45,7 @@ $mng = "mng@gmail.com";
                         </tr>
                     </tbody>
                 </table>
-                <a class="btn btn-light logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
+                <a class="btn btn-outline-dark logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
             </div>
             <div class="col-4">
             </div>

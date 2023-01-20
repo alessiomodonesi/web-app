@@ -43,13 +43,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/login">Home</a>
+                            <a class="nav-link active">Home</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link active">Management</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/login">Management</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="http://localhost/sandwech/login">Vendite</a>
+                            <a class="nav-link active">Vendite</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -73,23 +73,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="mb-3 email">
-                        <label for="email" class="form-label text-white">Email Address</label>
-                        <input type="email" class="form-control text-center" name="email" placeholder="Enter an email address">
-                        <span class="error-msg text-white"><?php echo $err ?></span>
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control text-center" name="email" placeholder="username@gmail.com">
+                        <span class="error-msg"><?php echo $err ?></span>
                     </div>
 
                     <div class="mb-3 password">
-                        <label for="password" class="form-label text-white">Password</label>
-                        <input type="text" class="form-control text-center" name="password" placeholder="Enter a password">
-                        <span class="error-msg text-white"><?php echo $err ?></span>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control text-center" name="password" placeholder="password" id="passwd">
+                        <span class="error-msg"><?php echo $err ?></span>
                     </div>
 
-                    <button type="submit" class="btn btn-light login-btn">Login</button>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input position-absolute" onclick="hide()">
+                        <label class="form-check-label">Show Password</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
                 </form>
-                <span class="error-login text-white"><?php echo $loginErr ?></span>
+                <span class="error-login"><?php echo $loginErr ?></span>
             </div>
             <div class="col-4"></div>
         </div>
     </div>
+
+    <script>
+        function hide() {
+            var x = document.getElementById("passwd");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 
     <?php get_footer(); ?>
