@@ -23,7 +23,7 @@ function login($data)
     curl_close($curl);
 
     $response = json_decode($responseJson);
-    var_dump($response);
+    //var_dump($response);
     if ($response->response == true) {
         $_SESSION['user_id'] = $response->userID;
         header('Location: http://localhost/sandwech');
