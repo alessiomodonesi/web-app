@@ -39,9 +39,7 @@ $(window).on('load', function () {
                     }
                 },
                 {
-                    data: null, render: function (data) {
-                        return data.quantity * data.price;
-                    }
+                    data: "price"
                 },
                 {
                     data: "created"
