@@ -13,8 +13,8 @@ VALUES
 
 INSERT INTO reset(`user`, password, expires, completed)
 VALUES
-(1, 'PaSSworD', Now(), TRUE),
-(2, 'CHanGE',  Now() , FALSE);
+(4, 'PaSSworD', Now(), TRUE),
+(5, 'CHanGE',  Now() , FALSE);
 
 INSERT INTO class(year, section)
 VALUES
@@ -23,14 +23,18 @@ VALUES
 (4, 'F'),
 (4, 'E'),
 (5, 'F'),
-(5, 'E');
+(5, 'E'),
+(5, 'M');
 
 INSERT INTO user_class(`user`, class, `year`)
 VALUES
-(1, 6, '2022'),
-(2, 6, '2022'),
-(3, 6, '2022'),
-(4, 6, '2022');
+(1, 7, '2023'),
+(2, 7, '2023'),
+(3, 7, '2023'),
+(4, 5, '2023'),
+(5, 5, '2023'),
+(6, 5, '2023'),
+(7, 5, '2023');
 
 -- product
 INSERT INTO nutritional_value(kcal, fats, carbohydrates, proteins)
@@ -192,10 +196,10 @@ VALUES
 
 INSERT INTO `order`(`user`, pickup, break, `status`)
 VALUES
-(1, 1, 1, 1),
-(2, 1, 2, 1),
-(3, 2, 3, 2),
-(4, 2, 3, 3);
+(4, 1, 1, 1),
+(5, 1, 3, 1),
+(6, 2, 2, 2),
+(7, 3, 2, 3);
 
 INSERT INTO product_order(product, `order`)
 VALUES
