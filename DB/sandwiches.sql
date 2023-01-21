@@ -129,7 +129,8 @@ CREATE  TABLE sandwiches.`order` (
 
 CREATE  TABLE sandwiches.product_order ( 
 	product              INT UNSIGNED NOT NULL,
-	`order`              INT UNSIGNED NOT NULL
+	`order`              INT UNSIGNED NOT NULL,
+	quantity 			 INT UNSIGNED NOT NULL
  );
 
 CREATE  TABLE sandwiches.product_tag ( 

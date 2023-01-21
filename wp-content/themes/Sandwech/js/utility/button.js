@@ -18,38 +18,9 @@ $(window).on('load', function () {
     btnRemove.addClass("btn-outline-dark btn-remove");
     btnRemove.removeClass("dt-button");
 
-    // export button
-    var btnExport = $(".buttons-collection");
-    btnExport.addClass("btn");
-    btnExport.addClass("btn-outline-dark btn-export");
-    btnExport.removeClass("dt-button");
-
-    var btnExport = $(".dt-down-arrow");
-    btnExport.addClass("arrow");
-
-    // export dropdown
-    var btnCopy = $(".buttons-copy");
-    btnCopy.addClass("btn");
-    btnCopy.addClass("btn-outline-dark btn-copy");
-    btnCopy.removeClass("dt-button");
-
-    var btnExcel = $(".buttons-excel");
-    btnExcel.addClass("btn");
-    btnExcel.addClass("btn-outline-dark btn-excel");
-    btnExcel.removeClass("dt-button");
-
-    var btnCsv = $(".buttons-csv");
-    btnCsv.addClass("btn");
-    btnCsv.addClass("btn-outline-dark btn-csv");
-    btnCsv.removeClass("dt-button");
-
-    var btnPdf = $(".buttons-pdf");
-    btnPdf.addClass("btn");
-    btnPdf.addClass("btn-outline-dark btn-pdf");
-    btnPdf.removeClass("dt-button");
-
-    var btnPrint = $(".buttons-print");
-    btnPrint.addClass("btn");
-    btnPrint.addClass("btn-outline-dark btn-print");
-    btnPrint.removeClass("dt-button");
+    // export btn
+    var btnExportCsv = $(".dt-button");
+    btnExportCsv.addClass("btn");
+    btnExportCsv.addClass("btn-outline-dark btn-export");
+    btnExportCsv.removeClass("dt-button");
 });

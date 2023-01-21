@@ -75,12 +75,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-floating mb-3 email">
                         <input type="email" class="form-control" name="email">
                         <label for="floatingEmail">Email address</label>
-                        <!-- <span class="error-msg"><?php echo $err ?></span> -->
                     </div>
                     <div class="form-floating mb-3 password">
                         <input type="password" class="form-control" name="password" id="passwd">
                         <label for="floatingPassword">Password</label>
-                        <!-- <span class="error-msg"><?php echo $err ?></span> -->
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" onclick="hidePasswd()">
@@ -88,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <a onclick="showModal()" id="help-btn">Ho bisogno di aiuto</a>
                     </div>
                     <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
-                    <!-- <span class="error-login"><?php echo $loginErr ?></span> -->
                 </form>
             </div>
             <div class="col-4"></div>

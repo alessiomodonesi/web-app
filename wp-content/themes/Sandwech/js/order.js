@@ -1,18 +1,9 @@
 var $ = jQuery;
-
 $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/order.php",
         table: "#order",
         fields: [
-            {
-                label: "User ID:",
-                name: "user_ID"
-            },
-            {
-                label: "Created:",
-                name: "created"
-            },
             {
                 label: "Pickup ID:",
                 name: "pickup_ID"
@@ -48,6 +39,11 @@ $(window).on('load', function () {
                     }
                 },
                 {
+                    data: null, render: function (data) {
+                        return data.quantity * data.price;
+                    }
+                },
+                {
                     data: "created"
                 },
                 {
@@ -71,16 +67,19 @@ $(window).on('load', function () {
                 editor: editor
             },
             {
-                extend: "collection",
-                text: "Export",
-                buttons: [
-                    "copy",
-                    "excel",
-                    "csv",
-                    "pdf",
-                    "print"
-                ]
-            }
+                extend: 'csv',
+                text: 'Export CSV',
+                className: 'btn-space',
+                exportOptions: {
+                    orthogonal: null
+                }
+            },
+            {
+                extend: 'selectAll',
+                className: 'btn-space'
+            },
+            'selectNone',
+
         ]
     });
 });

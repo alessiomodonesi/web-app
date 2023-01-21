@@ -9,6 +9,7 @@
                     <th>ID</th>
                     <th>User</th>
                     <th>Class</th>
+                    <th>Price</th>
                     <th>Created</th>
                     <th>Pickup</th>
                     <th>Break</th>

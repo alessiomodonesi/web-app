@@ -201,14 +201,14 @@ VALUES
 (6, 2, 2, 2),
 (7, 3, 2, 3);
 
-INSERT INTO product_order(product, `order`)
+INSERT INTO product_order(product, `order`, quantity)
 VALUES
-(1, 1),
-(1, 1),
-(2, 2),
-(2, 2),
-(3, 3),
-(3, 4);
+(1, 1, 3),
+(1, 1, 4),
+(2, 2, 5),
+(2, 2, 5),
+(3, 3, 2),
+(3, 4, 3);
 
 INSERT INTO `cart`(`user`, product, quantity)
 VALUES

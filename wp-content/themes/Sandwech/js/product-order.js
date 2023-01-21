@@ -1,5 +1,4 @@
 var $ = jQuery;
-
 $(window).on('load', function () {
     var editor = new $.fn.dataTable.Editor({
         ajax: "../EditorPHP/controllers/product-order.php",
@@ -8,6 +7,10 @@ $(window).on('load', function () {
             {
                 label: "Product ID:",
                 name: "product_ID"
+            },
+            {
+                label: "Quantity:",
+                name: "quantity"
             },
             {
                 label: "Order ID:",
@@ -23,6 +26,9 @@ $(window).on('load', function () {
         columns: [
             {
                 data: "product"
+            },
+            {
+                data: "quantity"
             },
             {
                 data: "order_ID"
@@ -43,16 +49,18 @@ $(window).on('load', function () {
                 editor: editor
             },
             {
-                extend: "collection",
-                text: "Export",
-                buttons: [
-                    "copy",
-                    "excel",
-                    "csv",
-                    "pdf",
-                    "print"
-                ]
-            }
+                extend: 'csv',
+                text: 'Export CSV',
+                className: 'btn-space',
+                exportOptions: {
+                    orthogonal: null
+                }
+            },
+            {
+                extend: 'selectAll',
+                className: 'btn-space'
+            },
+            'selectNone',
         ]
     });
 });

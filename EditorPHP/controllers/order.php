@@ -21,7 +21,10 @@ Editor::inst($db, 'order', 'ID')
         Field::inst('pickup.name', 'pickup'),
         Field::inst('break.time', 'break'),
         Field::inst('status.description', 'status'),
-        Field::inst('order.json', 'json')
+        Field::inst('order.json', 'json'),
+        Field::inst('product_order.quantity', 'quantity'),
+        Field::inst('product.price', 'price')
+
 
     )
     ->leftJoin('user', 'user.ID', '=', 'order.user')
@@ -30,6 +33,8 @@ Editor::inst($db, 'order', 'ID')
     ->leftJoin('pickup', 'pickup.ID', '=', 'order.pickup')
     ->leftJoin('break', 'break.ID', '=', 'order.break')
     ->leftJoin('status', 'status.ID', '=', 'order.status')
+    ->leftJoin('product_order', 'product_order.order', '=', 'order.ID')
+    ->leftJoin('product', 'product.ID', '=', 'product_order.product')
     ->debug(true)
     ->process($_POST)
     ->json();

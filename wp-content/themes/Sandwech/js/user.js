@@ -64,18 +64,18 @@ $(window).on("load", function () {
             editor: editor
         },
         {
-            extend: "collection",
-            text: "Export",
-            buttons: [
-                "copy",
-                "excel",
-                "csv",
-                "pdf",
-                "print"
-            ]
-        }
+            extend: 'csv',
+            text: 'Export CSV',
+            className: 'btn-space',
+            exportOptions: {
+                orthogonal: null
+            }
+        },
+        {
+            extend: 'selectAll',
+            className: 'btn-space'
+        },
+            'selectNone',
         ]
     });
 });
-
-

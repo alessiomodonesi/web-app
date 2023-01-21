@@ -8,6 +8,7 @@
             <thead>
                 <tr>
                     <th>Product</th>
+                    <th>Quantity</th>
                     <th>Order</th>
                 </tr>
             </thead>
