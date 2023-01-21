@@ -33,8 +33,13 @@ Editor::inst($db, 'order', 'ID')
     ->leftJoin('pickup', 'pickup.ID', '=', 'order.pickup')
     ->leftJoin('break', 'break.ID', '=', 'order.break')
     ->leftJoin('status', 'status.ID', '=', 'order.status')
-    ->leftJoin('product_order', 'product_order.order', '=', 'order.ID')
-    ->leftJoin('product', 'product.ID', '=', 'product_order.product')
     ->debug(true)
     ->process($_POST)
     ->json();
+
+$editor->db()
+    ->query('select', 'product.price' * 'product_order.quantity')
+    ->leftJoin('product_order', 'product_order.order', '=', 'order.ID')
+    ->leftJoin('product', 'product.ID', '=', 'product_order.product')
+    ->where('order.id', 'product_order.order')
+    ->exec();
