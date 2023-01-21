@@ -31,8 +31,7 @@ $mng = "mng@gmail.com";
         </div>
 
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4 text-center login-form">
+            <div class="col text-center login-form">
                 <div class="card mx-auto">
                     <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                     <div class="container text-center">
@@ -63,8 +62,6 @@ $mng = "mng@gmail.com";
                 </div>
 
                 <a class="btn btn-outline-dark logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Esci</a>
-            </div>
-            <div class="col-4">
             </div>
         </div>
     </div>

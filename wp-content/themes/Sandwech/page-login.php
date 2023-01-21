@@ -68,8 +68,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </div>
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4 text-center login-form">
+            <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+            <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center login-form">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="form-floating mb-3 email">
@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
                 </form>
             </div>
-            <div class="col-4"></div>
+            <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
         </div>
     </div>
 
