@@ -35,11 +35,11 @@ Editor::inst($db, 'order', 'ID')
                     ->bind(':id', $value)
                     ->exec($stmt);
                 $row = $result->fetch(PDO::FETCH_ASSOC);
-                if ( (bool)$row ) {
+                if ((bool)$row) {
                     return $row["price"];
                 }
                 return 0;
-         })
+            })
 
 
     )
@@ -52,18 +52,3 @@ Editor::inst($db, 'order', 'ID')
     ->debug(true)
     ->process($_POST)
     ->json();
-
-/*$editor->db()
-    ->query('select', 'sum(product.price' * 'product_order.quantity)')
-    ->from('order')
-    ->leftJoin('product_order', 'product_order.order', '=', 'order.ID')
-    ->leftJoin('product', 'product.ID', '=', 'product_order.product')
-    ->exec();
-
-/*Query da creare con datatables
-select sum(p.price * po.quantity) as costo
-from `order` o 
-inner join product_order po on po.`order` = o.id 
-inner join product p on p.id = po.product 
-where 1=1
-group by o.id;*/
