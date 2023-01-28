@@ -137,14 +137,14 @@ $(window).on("load", function () {
                 orthogonal: null
             }
         },
-        {
-            text: 'Import CSV',
-            action: function () {
-                uploadEditor.create({
-                    title: 'CSV file import'
-                });
-            }
-        },
+        // {
+        //     text: 'Import CSV',
+        //     action: function () {
+        //         uploadEditor.create({
+        //             title: 'CSV file import'
+        //         });
+        //     }
+        // },
         {
             extend: 'selectAll',
             className: 'btn-space'
