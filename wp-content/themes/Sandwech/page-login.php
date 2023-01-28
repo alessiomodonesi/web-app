@@ -73,17 +73,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <form method="post">
                     <div class="form-floating mb-3 email">
-                        <input type="email" class="form-control" name="email">
-                        <label for="floatingEmail">Email address</label>
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+                        <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3 password">
-                        <input type="password" class="form-control" name="password" id="passwd">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" onclick="hidePasswd()">
-                        <label class="form-check-label">Show Password</label>
-                        <a onclick="showModal()" id="help-btn">Ho bisogno di aiuto</a>
+                        <input type="checkbox" class="form-check-input" id="show-btn" onclick="hidePasswd()">
+                        <label class="form-check-label" id="show-passwd">Show Password</label>
+                        <a onclick="showModal()" id="help-a">Ho bisogno di aiuto</a>
                     </div>
                     <button type="submit" class="btn btn-outline-dark login-btn">Login</button>
                 </form>
@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         var $ = jQuery;
 
         function hidePasswd() {
-            var x = document.getElementById("passwd");
+            var x = document.getElementById("floatingPassword");
             if (x.type === "password") {
                 x.type = "text";
             } else {

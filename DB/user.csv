@@ -1,0 +1,4 @@
+"ID","Name","Surname","Email","Password","Active"
+"1","Sudo","Admin","admin@gmail.com","admin","1"
+"2","Gestore","Management","mng@gmail.com","mng","1"
+"3","Gestore","Vendite","vendite@gmail.com","vendite","1"

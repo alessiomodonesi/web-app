@@ -4,7 +4,7 @@ function selectColumns(editor, csv, header) {
     var selectEditor = new $.fn.dataTable.Editor();
     var fields = editor.order();
 
-    for (var i = 0; i < fields.length; i++) {
+    for (var i = 0; i < fields.length - 2; i++) {
         var field = editor.field(fields[i]);
 
         selectEditor.add({
@@ -23,7 +23,7 @@ function selectColumns(editor, csv, header) {
         onComplete: 'none'
     });
 
-    selectEditor.on('submitComplete', function (e, json, data, action) {
+    selectEditor.on('submitComplete', function (data) {
         editor.create(csv.length, {
             title: 'Confirm import',
             buttons: 'Submit',
