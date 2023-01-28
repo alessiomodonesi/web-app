@@ -43,8 +43,8 @@ function selectColumns(editor, csv, header) {
 
 $(window).on("load", function () {
     var editor = new $.fn.dataTable.Editor({
-        ajax: "../EditorPHP/controllers/user.php",
-        table: "#user",
+        ajax: "../EditorPHP/controllers/test.php",
+        table: "#test",
         fields: [
             {
                 label: "Name:",
@@ -94,26 +94,27 @@ $(window).on("load", function () {
         }]
     });
 
-    $("#user").DataTable({
+    $("#test").DataTable({
         dom: "Bfrtip",
         lengthChange: false,
-        ajax: "../EditorPHP/controllers/user.php",
+        ajax: "../EditorPHP/controllers/test.php",
         columns: [
             {
                 data: "ID"
             },
             {
-                data: null, render: function (data) {
-                    return data.name + " " + data.surname;
-                }
-            },
-            {
-                data: null, render: function (data) {
-                    return data.year + data.section;
-                }
+                data: "name"
+            }, {
+                data: "surname"
             },
             {
                 data: "email"
+            },
+            {
+                data: "password"
+            },
+            {
+                data: "active"
             }
         ],
         select: true,
