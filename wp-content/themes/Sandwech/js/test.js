@@ -3,8 +3,10 @@ var $ = jQuery;
 function selectColumns(editor, csv, header) {
     var selectEditor = new $.fn.dataTable.Editor();
     var fields = editor.order();
+    var fieldsLen = fields.length - 2;
+    var csvLen = csv.length;
 
-    for (var i = 0; i < fields.length - 2; i++) {
+    for (var i = 0; i < fieldsLen; i++) {
         var field = editor.field(fields[i]);
 
         selectEditor.add({
@@ -18,23 +20,23 @@ function selectColumns(editor, csv, header) {
 
     selectEditor.create({
         title: 'Map CSV fields',
-        buttons: 'Import ' + csv.length + ' records',
+        buttons: 'Import ' + csvLen + ' records',
         message: 'Select the CSV column you want to use the data from for each field.',
         onComplete: 'none'
     });
 
     selectEditor.on('submitComplete', function (data) {
-        editor.create(csv.length, {
+        editor.create(csvLen, {
             title: 'Confirm import',
             buttons: 'Submit',
-            message: 'Click the <i>Submit</i> button to confirm the import of ' + csv.length + ' rows of data. Optionally, override the value for a field to set a common value by clicking on the field below.'
+            message: 'Click the <i>Submit</i> button to confirm the import of ' + csvLen + ' rows of data. Optionally, override the value for a field to set a common value by clicking on the field below.'
         });
 
-        for (var i = 0; i < fields.length; i++) {
+        for (var i = 0; i < fieldsLen; i++) {
             var field = editor.field(fields[i]);
             var mapped = data[field.name()];
 
-            for (var j = 0; j < csv.length; j++) {
+            for (var j = 0; j < csvLen; j++) {
                 field.multiSet(j, csv[j][mapped]);
             }
         }
