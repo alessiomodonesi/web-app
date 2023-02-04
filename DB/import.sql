@@ -6,6 +6,7 @@ VALUES
 ('Sudo', 'Admin', 'admin@gmail.com', 'admin'),
 ('Gestore', 'Management', 'mng@gmail.com', 'mng'),
 ('Gestore', 'Vendite', 'vendite@gmail.com', 'vendite'),
+('Alessio', 'Modonesi', 'studente@gmail.com', 'studente'),
 ('Alessio', 'Modonesi', 'alessio.modonesi@iisviolamarchesini.edu.it', '1234'),
 ('Mattia', 'Gallinaro', 'mattia.gallinaro@iisviolamarchesini.edu.it', '5678'),
 ('Matteo', 'Rigolin', 'matteo.rigolin@iisviolamarchesini.edu.it', '4321'),

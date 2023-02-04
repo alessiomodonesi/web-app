@@ -7,6 +7,7 @@ $user = checkLogin();
 
 // utenti
 $admin = "admin@gmail.com";
+$studente = "studente@gmail.com";
 $vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
 
@@ -50,6 +51,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <li class="nav-item">
                             <a class="nav-link active" href="http://localhost/sandwech">Home</a>
                         </li>
+                        <?php if ($user[0]->email == $studente || $user[0]->email == $admin) : ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="http://localhost/sandwech/studente">Studente</a>
+                            </li>
+                        <?php endif ?>
                         <?php if ($user[0]->email == $mng || $user[0]->email == $admin) : ?>
                             <li class="nav-item">
                                 <a class="nav-link active" href="http://localhost/sandwech/management">Management</a>

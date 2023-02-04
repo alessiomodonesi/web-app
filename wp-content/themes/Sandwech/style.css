@@ -78,15 +78,13 @@ Version: 1.0
     color: black !important;
 }
 
-#show-passwd {
-    margin-right: 6vw !important;
-    /* justify-content: start !important; */
+.utils {
+    margin-top: 1vh !important;
+    margin-bottom: 2vh !important;
 }
 
-#help-a {
+#help-btn {
     text-decoration: underline;
-    margin-left: 5vw !important;
-    /* justify-content: end !important; */
 }
 
 /* card */
