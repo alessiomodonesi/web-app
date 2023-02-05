@@ -1,6 +1,6 @@
 # WordPress MySQL database migration
 #
-# Generated: Sunday 5. February 2023 17:01 UTC
+# Generated: Sunday 5. February 2023 17:20 UTC
 # Hostname: localhost
 # Database: `wordpress`
 # URL: //localhost/sandwech
@@ -156,7 +156,7 @@ CREATE TABLE `wp_options` (
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`),
   KEY `autoload` (`autoload`)
-) ENGINE=InnoDB AUTO_INCREMENT=2762 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2777 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 
 #
@@ -269,7 +269,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (103, 'user_count', '3', 'no'),
 (104, 'widget_block', 'a:6:{i:2;a:1:{s:7:"content";s:19:"<!-- wp:search /-->";}i:3;a:1:{s:7:"content";s:158:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Articoli recenti</h2><!-- /wp:heading --><!-- wp:latest-posts /--></div><!-- /wp:group -->";}i:4;a:1:{s:7:"content";s:228:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Commenti recenti</h2><!-- /wp:heading --><!-- wp:latest-comments {"displayAvatar":false,"displayDate":false,"displayExcerpt":false} /--></div><!-- /wp:group -->";}i:5;a:1:{s:7:"content";s:145:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Archivi</h2><!-- /wp:heading --><!-- wp:archives /--></div><!-- /wp:group -->";}i:6;a:1:{s:7:"content";s:149:"<!-- wp:group --><div class="wp-block-group"><!-- wp:heading --><h2>Categorie</h2><!-- /wp:heading --><!-- wp:categories /--></div><!-- /wp:group -->";}s:12:"_multiwidget";i:1;}', 'yes'),
 (105, 'sidebars_widgets', 'a:2:{s:19:"wp_inactive_widgets";a:5:{i:0;s:7:"block-2";i:1;s:7:"block-3";i:2;s:7:"block-4";i:3;s:7:"block-5";i:4;s:7:"block-6";}s:13:"array_version";i:3;}', 'yes'),
-(106, 'cron', 'a:9:{i:1675616778;a:1:{s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1675641978;a:4:{s:18:"wp_https_detection";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1675641991;a:1:{s:21:"wp_update_user_counts";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1675685178;a:1:{s:32:"recovery_mode_clean_expired_keys";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675685191;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675685193;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675689838;a:1:{s:21:"ai1wm_storage_cleanup";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1676030778;a:1:{s:30:"wp_site_health_scheduled_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"weekly";s:4:"args";a:0:{}s:8:"interval";i:604800;}}}s:7:"version";i:2;}', 'yes'),
+(106, 'cron', 'a:9:{i:1675620378;a:1:{s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1675641978;a:4:{s:18:"wp_https_detection";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1675641991;a:1:{s:21:"wp_update_user_counts";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1675685178;a:1:{s:32:"recovery_mode_clean_expired_keys";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675685191;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675685193;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1675689838;a:1:{s:21:"ai1wm_storage_cleanup";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1676030778;a:1:{s:30:"wp_site_health_scheduled_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"weekly";s:4:"args";a:0:{}s:8:"interval";i:604800;}}}s:7:"version";i:2;}', 'yes'),
 (107, 'widget_pages', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (108, 'widget_calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (109, 'widget_archives', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
@@ -303,7 +303,7 @@ INSERT INTO `wp_options` ( `option_id`, `option_name`, `option_value`, `autoload
 (2377, 'wpfc-group', '', 'yes'),
 (2614, 'ai1wm_secret_key', '89fN0izglJME', 'yes'),
 (2618, 'ai1wm_updater', 'a:0:{}', 'yes'),
-(2761, 'wpmdb_usage', 'a:2:{s:6:"action";s:8:"savefile";s:4:"time";i:1675616461;}', 'no') ;
+(2761, 'wpmdb_usage', 'a:2:{s:6:"action";s:8:"savefile";s:4:"time";i:1675617651;}', 'no') ;
 
 #
 # End of data contents of table `wp_options`
@@ -330,7 +330,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 
 #
@@ -375,7 +375,8 @@ INSERT INTO `wp_postmeta` ( `meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (114, 119, '_edit_lock', '1675615840:1'),
 (115, 121, '_edit_lock', '1675615846:1'),
 (116, 123, '_edit_lock', '1675615851:1'),
-(117, 125, '_edit_lock', '1675615858:1') ;
+(117, 125, '_edit_lock', '1675615858:1'),
+(118, 127, '_edit_lock', '1675617456:1') ;
 
 #
 # End of data contents of table `wp_postmeta`
@@ -423,7 +424,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=127 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=129 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 
 #
@@ -499,7 +500,9 @@ INSERT INTO `wp_posts` ( `ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (123, 1, '2023-02-05 17:53:15', '2023-02-05 16:53:15', '', 'Snack', '', 'publish', 'closed', 'closed', '', 'snack', '', '', '2023-02-05 17:53:15', '2023-02-05 16:53:15', '', 0, 'http://sandweches.ddns.net/sandwech/?page_id=123', 0, 'page', '', 0),
 (124, 1, '2023-02-05 17:53:15', '2023-02-05 16:53:15', '', 'Snack', '', 'inherit', 'closed', 'closed', '', '123-revision-v1', '', '', '2023-02-05 17:53:15', '2023-02-05 16:53:15', '', 123, 'http://sandweches.ddns.net/sandwech/?p=124', 0, 'revision', '', 0),
 (125, 1, '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 'Carrello', '', 'publish', 'closed', 'closed', '', 'carrello', '', '', '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 0, 'http://sandweches.ddns.net/sandwech/?page_id=125', 0, 'page', '', 0),
-(126, 1, '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 'Carrello', '', 'inherit', 'closed', 'closed', '', '125-revision-v1', '', '', '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 125, 'http://sandweches.ddns.net/sandwech/?p=126', 0, 'revision', '', 0) ;
+(126, 1, '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 'Carrello', '', 'inherit', 'closed', 'closed', '', '125-revision-v1', '', '', '2023-02-05 17:53:20', '2023-02-05 16:53:20', '', 125, 'http://sandweches.ddns.net/sandwech/?p=126', 0, 'revision', '', 0),
+(127, 1, '2023-02-05 18:20:00', '2023-02-05 17:20:00', '', 'Studente', '', 'publish', 'closed', 'closed', '', 'studente', '', '', '2023-02-05 18:20:00', '2023-02-05 17:20:00', '', 0, 'http://sandweches.ddns.net/sandwech/?page_id=127', 0, 'page', '', 0),
+(128, 1, '2023-02-05 18:20:00', '2023-02-05 17:20:00', '', 'Studente', '', 'inherit', 'closed', 'closed', '', '127-revision-v1', '', '', '2023-02-05 18:20:00', '2023-02-05 17:20:00', '', 127, 'http://sandweches.ddns.net/sandwech/?p=128', 0, 'revision', '', 0) ;
 
 #
 # End of data contents of table `wp_posts`
@@ -680,7 +683,7 @@ INSERT INTO `wp_usermeta` ( `umeta_id`, `user_id`, `meta_key`, `meta_value`) VAL
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', 'plugin_editor_notice'),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:3:{s:64:"7ea0b1263bf53c22eb8af70d86da0aa9f1948ef15b618d54d59f8b3a20939724";a:4:{s:10:"expiration";i:1675667551;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1674457951;}s:64:"f0d492635bfd2d25bbbf15d8e8a117643a88db2c8da88c0b57748798e7fadd56";a:4:{s:10:"expiration";i:1675669849;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1674460249;}s:64:"e72242bac8fc860eda9cf0910b26e45a8996ece0b7bc259546c058878af188e9";a:4:{s:10:"expiration";i:1676825123;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1675615523;}}'),
+(16, 1, 'session_tokens', 'a:4:{s:64:"7ea0b1263bf53c22eb8af70d86da0aa9f1948ef15b618d54d59f8b3a20939724";a:4:{s:10:"expiration";i:1675667551;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1674457951;}s:64:"f0d492635bfd2d25bbbf15d8e8a117643a88db2c8da88c0b57748798e7fadd56";a:4:{s:10:"expiration";i:1675669849;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1674460249;}s:64:"e72242bac8fc860eda9cf0910b26e45a8996ece0b7bc259546c058878af188e9";a:4:{s:10:"expiration";i:1676825123;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1675615523;}s:64:"f4a82e9710233d8e3604e12c3e114d065bfab83f8b0df91d2d154d069b2a3083";a:4:{s:10:"expiration";i:1676827192;s:2:"ip";s:3:"::1";s:2:"ua";s:117:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36";s:5:"login";i:1675617592;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '114'),
 (18, 1, 'wp_persisted_preferences', 'a:2:{s:14:"core/edit-post";a:4:{s:26:"isComplementaryAreaVisible";b:1;s:12:"welcomeGuide";b:0;s:10:"openPanels";a:2:{i:0;s:11:"post-status";i:1;s:16:"discussion-panel";}s:10:"editorMode";s:6:"visual";}s:9:"_modified";s:24:"2023-01-14T11:21:52.958Z";}'),
 (19, 1, 'wp_user-settings', 'mfold=o'),
