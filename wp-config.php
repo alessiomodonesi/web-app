@@ -30,7 +30,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 
 /** Hostname del database */
-define('DB_HOST', 'sandwech.ddns.net');
+define('DB_HOST', 'sandweches.ddns.net');
 
 /** Charset del Database da utilizzare nella creazione delle tabelle. */
 define('DB_CHARSET', 'utf8mb4');
