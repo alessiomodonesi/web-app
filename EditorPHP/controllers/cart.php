@@ -1,6 +1,8 @@
 <?php
 
 include("../lib/DataTables.php");
+include_once dirname(__FILE__) . '../wp-content/themes/Sandwech/php/login/checkLogin.php';
+$user = checkLogin();
 
 use
     DataTables\Editor,
@@ -13,7 +15,7 @@ Editor::inst($db, 'cart', 'user')
         Field::inst('cart.quantity', 'quantity'),
         Field::inst('product.name', 'name'),
         Field::inst('cart.product as price')->set(false)
-            ->getFormatter(function ($value, $data, $opts) use ($db) {
+            ->getFormatter(function ($value) use ($db) {
                 $stmt = ('select sum(p.price * c.quantity) as price
             from `cart` c 
             left join product p on p.id = c.product
@@ -30,6 +32,8 @@ Editor::inst($db, 'cart', 'user')
             })
     )
     ->leftJoin('product', 'product.ID', '=', 'cart.product')
+    ->leftJoin('user', 'user.ID', '=', 'cart.user')
+    ->where('cart.user', $user[0]->id)
     ->debug(true)
     ->process($_POST)
     ->json();

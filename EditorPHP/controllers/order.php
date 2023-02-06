@@ -24,7 +24,7 @@ Editor::inst($db, 'order', 'ID')
         Field::inst('status.description', 'status'),
         Field::inst('order.json', 'json'),
         Field::inst('order.id as price')->set(false)
-            ->getFormatter(function ($value, $data, $opts) use ($db) {
+            ->getFormatter(function ($value) use ($db) {
                 $stmt = ('select sum(p.price * po.quantity) as price
             from `order` o 
             inner join product_order po on po.`order` = o.id 

@@ -8,6 +8,10 @@
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/brioches" role="button">Brioches</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/snack" role="button">Snack</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/bibite" role="button">Bibite</a>
-        <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/carrello" role="button">Carrello</a>
+        <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/bibite" role="button">+</a>
+        <a class="btn btn-outline-dark btn-list" href="#" role="button">
+            <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/cart.png" alt="home" width="24" height="24" class="d-inline-block home-png">
+        </a>
+        <a class="btn btn-outline-dark btn-list" href="#" role="button">-</a>
     </ul>
 </div>
