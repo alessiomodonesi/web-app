@@ -1,10 +1,10 @@
 var $ = jQuery;
 $(window).on('load', function () {
-    $('#panini').DataTable({
+    $('#carrello').DataTable({
         ajax: "../EditorPHP/controllers/cart.php",
         columns: [
             {
-                data: "product"
+                data: "name"
             },
             {
                 data: "quantity"

@@ -1,6 +1,6 @@
 var $ = jQuery;
 $(window).on('load', function () {
-    $('#panini').DataTable({
+    $('#snack').DataTable({
         ajax: "../EditorPHP/controllers/snack.php",
         columns: [
             {

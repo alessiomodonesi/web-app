@@ -11,7 +11,23 @@ Editor::inst($db, 'cart', 'user')
         Field::inst('cart.user', 'user'),
         Field::inst('cart.product', 'product'),
         Field::inst('cart.quantity', 'quantity'),
-        Field::inst('cart.price', 'price')
+        Field::inst('product.name', 'name'),
+        Field::inst('cart.product as price')->set(false)
+            ->getFormatter(function ($value, $data, $opts) use ($db) {
+                $stmt = ('select sum(p.price * c.quantity) as price
+            from `cart` c 
+            left join product p on p.id = c.product
+            left join `user` u on u.id = c.`user` 
+            where c.user = :id');
+                $result = $db->raw()
+                    ->bind(':id', $value)
+                    ->exec($stmt);
+                $row = $result->fetch(PDO::FETCH_ASSOC);
+                if ((bool)$row) {
+                    return $row["price"];
+                }
+                return 0;
+            })
     )
     ->leftJoin('product', 'product.ID', '=', 'cart.product')
     ->debug(true)
