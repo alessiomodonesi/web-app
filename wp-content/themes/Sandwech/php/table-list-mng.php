@@ -11,6 +11,5 @@
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/status">Status</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/user">User</a>
         <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/user-class">User Class</a>
-        <a class="btn btn-outline-dark btn-list" href="http://localhost/sandwech/test">Test</a>
     </ul>
 </div>
