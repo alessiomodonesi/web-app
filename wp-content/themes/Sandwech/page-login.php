@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" id="logoModal">
                 </div>
                 <div class="modal-body">
-                    <h6>Admin</h6>
+                    <h6>Amministratore</h6>
                     <p>admin@gmail.com - admin</p>
                     <hr />
                     <h6>Studente</h6>
@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h6>Management</h6>
                     <p>mng@gmail.com - mng</p>
                     <hr />
-                    <h6>Vendite</h6>
+                    <h6>Reparto vendite</h6>
                     <p>vendite@gmail.com - vendite</p>
                 </div>
                 <div class="modal-footer">
