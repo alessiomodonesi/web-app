@@ -1,12 +1,4 @@
-<?php
-get_header();
-$user = checkLogin();
-
-// utenti
-$admin = "admin@gmail.com";
-$vendite = "vendite@gmail.com";
-$mng = "mng@gmail.com";
-?>
+<?php get_header(); ?>
 
 <div class="container">
     <div class="row">

@@ -1,8 +1,5 @@
 <?php
 
-// include_once dirname(__FILE__) . '../wp-content/themes/Sandwech/php/login/checkLogin.php';
-// $user = checkLogin();
-
 include("../lib/DataTables.php");
 
 use

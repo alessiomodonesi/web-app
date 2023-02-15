@@ -1,6 +1,7 @@
 <?php
 include_once dirname(__FILE__) . '/php/login/login.php';
 session_start();
+
 $err = "";
 $loginErr = "";
 
