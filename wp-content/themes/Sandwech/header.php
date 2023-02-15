@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body <?php body_class();
-        if (get_the_title() == "Home") : ?> id="body-login" <?php else : ?> id="body-logged" <?php endif; ?>>
+        if (get_the_title() == "Home") : ?> id="body-1" <?php else : ?> id="body-2" <?php endif; ?>>
 
     <!-- Scelgo la navbar in base alla pagina -->
     <?php

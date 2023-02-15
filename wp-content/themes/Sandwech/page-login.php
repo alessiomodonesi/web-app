@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php wp_head(); ?>
 </head>
 
-<body id="body-login" <?php body_class(); ?>>
+<body id="body-1" <?php body_class(); ?>>
     <?php require("php/navbar/navbar-login.php"); ?>
     <div class="container">
         <div class="row">

@@ -9,12 +9,12 @@ Version: 1.0
 */
 
 /* body */
-#body-login {
-    background-image: url("../assets/img/wallpaper.png");
+#body-1 {
+    background-image: url("../assets/img/main.png");
     background-repeat: no-repeat;
 }
 
-#body-logged {
+#body-2 {
     background-color: snow;
 }
 
