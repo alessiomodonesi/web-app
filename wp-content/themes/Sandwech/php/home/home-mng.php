@@ -1,4 +1,4 @@
-<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
+<link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
 <div class="main-container">
   <div class="cards text-center">
 
