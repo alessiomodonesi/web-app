@@ -2,7 +2,7 @@
 
 <div class="row">
     <?php require("php/table-list-vendite.php"); ?>
-    <div class="col-10">
+    <div class="col-9">
         <table id="tag" class="table table-striped" style="width:100%">
             <thead>
                 <tr>
