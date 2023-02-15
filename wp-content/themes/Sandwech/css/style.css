@@ -8,10 +8,9 @@ Requires PHP: 5.6
 Version: 1.0
 */
 
-/* body {
+body {
     background-image: url("../assets/img/wallpaper.png");
-    background-repeat: no-repeat;
-} */
+}
 
 /* logo */
 .logo {
