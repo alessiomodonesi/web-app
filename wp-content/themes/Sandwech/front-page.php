@@ -8,61 +8,40 @@ $vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
 ?>
 
+<div class="container">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center info-form">
+            <div class="card mx-auto">
+                <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
+                <div class="container text-center">
 
-<!doctype html>
-<html lang="en">
+                    <?php if ($user[0]->email == $admin) : ?>
+                        <h4><b>Admin</b></h4>
+                        <p>Email: <?php echo $user[0]->email; ?></p>
+                        <p>Ruolo: Amministratore</p>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sandwech</title>
-    <?php wp_head(); ?>
-</head>
+                    <?php elseif ($user[0]->email == $mng) : ?>
+                        <h4><b>Management</b></h4>
+                        <p>Email: <?php echo $user[0]->email; ?></p>
+                        <p>Ruolo: Accounts Management</p>
 
+                    <?php elseif ($user[0]->email == $vendite) : ?>
+                        <h4><b>Vendite</b></h4>
+                        <p>Email: <?php echo $user[0]->email; ?></p>
+                        <p>Ruolo: Gestore Vendite</p>
 
-<body <?php body_class(); ?>>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="title text-center">Ciao, <?php echo $user[0]->surname; ?>!</h2>
-                <hr />
-            </div>
-        </div>
+                    <?php else : ?>
+                        <h4><b><?php echo $user[0]->name; ?> <?php echo $user[0]->surname; ?></b></h4>
+                        <p>Email: <?php echo $user[0]->email; ?></p>
+                        <p>Ruolo: Utente</p>
 
-        <div class="row">
-            <div class="col text-center login-form">
-                <div class="card mx-auto">
-                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
-                    <div class="container text-center">
-
-                        <?php if ($user[0]->email == $admin) : ?>
-                            <h4><b>Admin</b></h4>
-                            <p>Email: <?php echo $user[0]->email; ?></p>
-                            <p>Ruolo: Administrator</p>
-
-                        <?php elseif ($user[0]->email == $mng) : ?>
-                            <h4><b>Management</b></h4>
-                            <p>Email: <?php echo $user[0]->email; ?></p>
-                            <p>Ruolo: Accounts Management</p>
-
-                        <?php elseif ($user[0]->email == $vendite) : ?>
-                            <h4><b>Vendite</b></h4>
-                            <p>Email: <?php echo $user[0]->email; ?></p>
-                            <p>Ruolo: Gestore Vendite</p>
-
-                        <?php else : ?>
-                            <h4><b><?php echo $user[0]->name; ?> <?php echo $user[0]->surname; ?></b></h4>
-                            <p>Email: <?php echo $user[0]->email; ?></p>
-                            <p>Ruolo: User</p>
-
-                        <?php endif ?>
-
-                    </div>
+                    <?php endif ?>
+                    <a class="btn btn-outline-dark logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Logout</a>
                 </div>
-
-                <a class="btn btn-outline-dark logout-btn" href="http://localhost/sandwech/wp-content/themes/Sandwech/php/login/logout.php" role="button">Esci</a>
             </div>
         </div>
     </div>
+</div>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

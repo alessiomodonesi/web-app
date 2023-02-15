@@ -8,6 +8,7 @@ Requires PHP: 5.6
 Version: 1.0
 */
 
+/* body */
 #body-login {
     background-image: url("../assets/img/wallpaper.png");
     background-repeat: no-repeat;
@@ -17,6 +18,7 @@ Version: 1.0
     background-color: snow;
 }
 
+/* navbar */
 .nav-link:hover {
     font-weight: bold;
 }
@@ -107,6 +109,12 @@ Version: 1.0
 
 #help-btn:hover {
     font-weight: bold;
+}
+
+/* info form */
+.info-form {
+    margin-top: 10vh !important;
+    margin-left: 3vw !important;
 }
 
 /* card */
