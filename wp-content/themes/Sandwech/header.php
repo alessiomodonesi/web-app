@@ -4,6 +4,7 @@ include_once dirname(__FILE__) . '/php/login/checkLogin.php';
 include_once dirname(__FILE__) . '/php/search.php';
 session_start();
 $user = checkLogin();
+remove_admin_bar();
 
 // utenti
 $admin = "admin@gmail.com";
@@ -17,10 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     else
         search_page($_POST['search']);
 }
-
-// if ($user[0]->email == $admin || get_the_title() == 'Login') {
-//     show_admin_bar(false);
-// }
 
 ?>
 
