@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h6>Management</h6>
                     <p>mng@gmail.com - mng</p>
                     <hr />
-                    <h6>Reparto vendite</h6>
+                    <h6>Reparto Vendite</h6>
                     <p>vendite@gmail.com - vendite</p>
                 </div>
                 <div class="modal-footer">
