@@ -31,13 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php wp_head(); ?>
 </head>
 
-<body <?php
+<body <?php body_class();
+        if (get_the_title() == "Home") : ?> id="body-login" <?php else : ?> id="body-logged" <?php endif; ?>>
 
-        body_class();
-        if (get_the_title() == "Home") :
-
-        ?> id="body-login" <?php else : ?> id="body-logged" <?php endif; ?>>
-
+    <!-- Scelgo la navbar in base alla pagina -->
     <?php
     if (get_the_title() == "Home")
         require("php/navbar/navbar-white.php");
