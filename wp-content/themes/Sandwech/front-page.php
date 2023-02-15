@@ -12,7 +12,7 @@ $mng = "mng@gmail.com";
     <div class="row">
         <div class="col-1"></div>
         <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 text-center info-form">
-            <div class="card mx-auto">
+            <div class="card mx-auto" style="border-radius: 30px 50px;">
                 <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" class="d-inline-block align-text-top logo">
                 <div class="container text-center">
 
