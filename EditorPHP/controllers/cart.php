@@ -1,8 +1,9 @@
 <?php
 
+// include_once dirname(__FILE__) . '../wp-content/themes/Sandwech/php/login/checkLogin.php';
+// $user = checkLogin();
+
 include("../lib/DataTables.php");
-include_once dirname(__FILE__) . '../wp-content/themes/Sandwech/php/login/checkLogin.php';
-$user = checkLogin();
 
 use
     DataTables\Editor,
@@ -33,7 +34,7 @@ Editor::inst($db, 'cart', 'user')
     )
     ->leftJoin('product', 'product.ID', '=', 'cart.product')
     ->leftJoin('user', 'user.ID', '=', 'cart.user')
-    ->where('cart.user', $user[0]->id)
+    // ->where('cart.user', $user[0]->id)
     ->debug(true)
     ->process($_POST)
     ->json();

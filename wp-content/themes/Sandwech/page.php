@@ -2,7 +2,6 @@
 
 get_header();
 $title = explode("-", get_the_title());
-$num = count($title);
 
 ?>
 
@@ -10,7 +9,7 @@ $num = count($title);
     <div class="row">
         <div class="col-12">
 
-            <?php if ($num == 1) : ?>
+            <?php if (count($title) == 1) : ?>
                 <h2 class="title text-center"><?php echo get_the_title(); ?></h2>
 
             <?php else : ?>
