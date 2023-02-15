@@ -4,7 +4,6 @@ include_once dirname(__FILE__) . '/php/login/checkLogin.php';
 include_once dirname(__FILE__) . '/php/navbar/search.php';
 session_start();
 $user = checkLogin();
-remove_admin_bar();
 
 // utenti
 $admin = "admin@gmail.com";

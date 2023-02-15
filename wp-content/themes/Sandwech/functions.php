@@ -24,8 +24,8 @@ function load_js()
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
-function remove_admin_bar()
-{
-	show_admin_bar(false);
-}
-add_action('after_setup_theme', 'remove_admin_bar');
+// function remove_admin_bar()
+// {
+// 	show_admin_bar(false);
+// }
+// add_action('after_setup_theme', 'remove_admin_bar');
