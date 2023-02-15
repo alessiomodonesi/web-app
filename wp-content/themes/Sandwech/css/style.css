@@ -8,8 +8,17 @@ Requires PHP: 5.6
 Version: 1.0
 */
 
-body {
+#body-login {
     background-image: url("../assets/img/wallpaper.png");
+    background-repeat: no-repeat;
+}
+
+#body-logged {
+    background-color: snow;
+}
+
+.nav-link:hover {
+    font-weight: bold;
 }
 
 /* logo */
@@ -21,13 +30,18 @@ body {
     border-radius: 50%;
 }
 
+.logo-nb {
+    background-color: white;
+    padding: 0.25vw;
+    border-radius: 50%;
+}
+
 #logoModal {
     width: 50px;
     height: 40px;
 }
 
 /* home btn */
-
 .home-btn:hover {
     background-color: white !important;
 }
@@ -69,6 +83,10 @@ body {
 }
 
 /* login form */
+.login-form {
+    margin-top: 6vh !important;
+}
+
 .login-btn,
 .logout-btn {
     margin-top: 1vh;
@@ -87,8 +105,8 @@ body {
     margin-bottom: 2vh !important;
 }
 
-#help-btn {
-    text-decoration: underline;
+#help-btn:hover {
+    font-weight: bold;
 }
 
 /* card */

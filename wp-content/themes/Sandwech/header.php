@@ -13,9 +13,7 @@ $vendite = "vendite@gmail.com";
 $mng = "mng@gmail.com";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if ($_POST['search'] == null || $_POST['search'] == 'Search')
-        echo "Please select a name";
-    else
+    if ($_POST['search'] != null && $_POST['search'] != 'Search')
         search_page($_POST['search']);
 }
 
@@ -33,33 +31,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="body-logged" <?php body_class(); ?>>
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand">
-                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="50" height="35" class="d-inline-block align-text-top">
+                    <img src="http://localhost/sandwech/wp-content/themes/Sandwech/assets/img/logo.png" alt="logo" width="55" height="40" class="d-inline-block align-text-top logo-nb">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item" style="cursor: pointer;">
                             <a class="nav-link active" href="http://localhost/sandwech">Home</a>
                         </li>
                         <?php if ($user[0]->email == $studente || $user[0]->email == $admin) : ?>
-                            <li class="nav-item">
+                            <li class="nav-item" style="cursor: pointer;">
                                 <a class="nav-link active" href="http://localhost/sandwech/studente">Studente</a>
                             </li>
                         <?php endif ?>
                         <?php if ($user[0]->email == $mng || $user[0]->email == $admin) : ?>
-                            <li class="nav-item">
+                            <li class="nav-item" style="cursor: pointer;">
                                 <a class="nav-link active" href="http://localhost/sandwech/management">Management</a>
                             </li>
                         <?php endif ?>
                         <?php if ($user[0]->email == $vendite || $user[0]->email == $admin) : ?>
-                            <li class="nav-item">
+                            <li class="nav-item" style="cursor: pointer;">
                                 <a class="nav-link active" href="http://localhost/sandwech/vendite">Vendite</a>
                             </li>
                         <?php endif ?>
