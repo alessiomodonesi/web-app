@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="row utils">
                         <div class="col-6">
                             <input type="checkbox" class="form-check-input" id="show-btn" onclick="hidePasswd()">
-                            <label class="form-check-label  text-white" id="show-passwd">Show Password</label>
+                            <label class="form-check-label text-white" id="show-passwd">Show Password</label>
                         </div>
                         <div class="col-6 text-white">
                             <a onclick="showModal()" id="help-btn" style="cursor: pointer;">Show Account</a>
