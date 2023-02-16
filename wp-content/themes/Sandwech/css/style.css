@@ -43,8 +43,6 @@
     width: 100%;
     margin-top: .5vh;
     margin-bottom: .5vh;
-    /* color: white !important; */
-    /* background-image: radial-gradient(#f49925, #e51c3b); */
 }
 
 .btn-list:hover {
@@ -188,4 +186,17 @@
     .cards {
         justify-content: center;
     }
+}
+
+/* studente */
+.btn-cart:hover {
+    font-weight: bold;
+    background-color: white !important;
+    color: black !important;
+}
+
+.btn-quantity:hover {
+    background-color: white !important;
+    color: black !important;
+    cursor: default !important;
 }

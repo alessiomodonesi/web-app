@@ -2,6 +2,7 @@
 
 get_header();
 $title = explode("-", get_the_title());
+$quantity = 3;
 
 ?>
 
