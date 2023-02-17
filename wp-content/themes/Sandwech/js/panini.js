@@ -1,6 +1,7 @@
 var $ = jQuery;
 $(window).on('load', function () {
     $('#panini').DataTable({
+        select: true,
         ajax: "../EditorPHP/controllers/panini.php",
         columns: [
             {
@@ -18,5 +19,3 @@ $(window).on('load', function () {
         ]
     });
 });
-
-
