@@ -9,6 +9,7 @@
                     <th>Name</th>
                     <th>Description</th>
                     <th>Price</th>
+                    <th>ID</th>
                 </tr>
             </thead>
             <tfoot>
