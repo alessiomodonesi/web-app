@@ -1,11 +1,19 @@
-<script>
+<script type="text/javascript">
     $(window).on('load', function() {
         $('#<?php echo strtolower(get_the_title()) ?> tbody').on('click', 'tr', function() {
-            const id = $(this).attr("id").split("_");
-            console.log("id: " + id[1]);
+            var id = $(this).attr("id").split("_");
+            // console.log("id: " + id[1]);
         });
     });
 </script>
+
+<?php
+
+include_once dirname(__FILE__) . '/product/getProduct.php';
+$product = getProduct($id);
+print_r($product);
+
+?>
 
 <div class="row">
     <div class="position-relative">
