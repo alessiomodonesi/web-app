@@ -3,7 +3,7 @@ USE sandwiches;
 -- user
 INSERT INTO `user`(name, surname, email, password)
 VALUES
-('Sudo', 'Admin', 'admin@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918'),
+('Sudo', 'Admin', 'admin@gmail.com', 'admin'),
 ('Gestore', 'Management', 'mng@gmail.com', 'mng'),
 ('Gestore', 'Vendite', 'vendite@gmail.com', 'vendite'),
 ('Alessio', 'Modonesi', 'studente@gmail.com', 'studente'),

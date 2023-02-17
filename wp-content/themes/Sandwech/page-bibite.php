@@ -18,6 +18,15 @@
     </div>
 </div>
 
+<script>
+    $(window).on('load', function() {
+        $('#panini tbody').on('click', 'tr', function() {
+            const id = $(this).attr("id").split("_");
+            console.log("id: " + id[1]);
+        });
+    });
+</script>
+
 <?php
 
 require("php/btn-tag.php");

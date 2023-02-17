@@ -23,11 +23,5 @@ $quantity = 3;
     </div>
 </div>
 
-<script>
-    $('.selected').click(function() {
-        console.log("cliccato");
-    });
-</script>
-
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/<?php echo strtolower(get_the_title()) ?>.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/utility/button.js"></script>
