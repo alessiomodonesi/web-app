@@ -1,19 +1,25 @@
+<?php include_once dirname(__FILE__) . '/product/getProduct.php'; ?>
+
 <script type="text/javascript">
     $(window).on('load', function() {
         $('#<?php echo strtolower(get_the_title()) ?> tbody').on('click', 'tr', function() {
             var id = $(this).attr("id").split("_");
-            // console.log("id: " + id[1]);
+
+            $.ajax({
+                url: "../wp-content/themes/Sandwech/php/product/getProduct.php",
+                method: "POST",
+                data: {
+                    id: id[1]
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
         });
     });
 </script>
 
-<?php
-
-include_once dirname(__FILE__) . '/product/getProduct.php';
-$product = getProduct($id);
-print_r($product);
-
-?>
+<?php $product = getProduct(); ?>
 
 <div class="row">
     <div class="position-relative">
