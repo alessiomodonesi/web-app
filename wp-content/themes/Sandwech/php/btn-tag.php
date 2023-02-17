@@ -10,9 +10,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    $('.selected').click(function() {
-        console.log("cliccato");
-    });
-</script>
