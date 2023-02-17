@@ -12,9 +12,6 @@ $(window).on('load', function () {
             },
             {
                 data: "price"
-            },
-            {
-                data: "ID"
             }
         ]
     });

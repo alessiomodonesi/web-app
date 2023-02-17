@@ -1,3 +1,12 @@
+<script>
+    $(window).on('load', function() {
+        $('#<?php echo strtolower(get_the_title()) ?> tbody').on('click', 'tr', function() {
+            const id = $(this).attr("id").split("_");
+            console.log("id: " + id[1]);
+        });
+    });
+</script>
+
 <div class="row">
     <div class="position-relative">
         <div class="btn-group position-absolute top-50 start-50 translate-middle" role="group">

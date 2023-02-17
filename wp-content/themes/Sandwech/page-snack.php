@@ -9,7 +9,6 @@
                     <th>Name</th>
                     <th>Description</th>
                     <th>Price</th>
-                    <th>ID</th>
                 </tr>
             </thead>
             <tfoot>
@@ -17,15 +16,6 @@
         </table>
     </div>
 </div>
-
-<script>
-    $(window).on('load', function() {
-        $('#snack tbody').on('click', 'tr', function() {
-            const id = $(this).attr("id").split("_");
-            console.log("snack: " + id[1]);
-        });
-    });
-</script>
 
 <?php
 
