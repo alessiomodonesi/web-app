@@ -31,7 +31,7 @@ Editor::inst($db, 'cart', 'user')
     )
     ->leftJoin('product', 'product.ID', '=', 'cart.product')
     ->leftJoin('user', 'user.ID', '=', 'cart.user')
-    // ->where('cart.user', $user[0]->id)
+    //->where('cart.user', '1')
     ->debug(true)
     ->process($_POST)
     ->json();
