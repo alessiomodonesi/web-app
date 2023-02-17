@@ -20,9 +20,9 @@
 
 <script>
     $(window).on('load', function() {
-        $('#panini tbody').on('click', 'tr', function() {
+        $('#brioches tbody').on('click', 'tr', function() {
             const id = $(this).attr("id").split("_");
-            console.log("id: " + id[1]);
+            console.log("brioche: " + id[1]);
         });
     });
 </script>
