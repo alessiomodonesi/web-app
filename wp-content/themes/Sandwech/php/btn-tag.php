@@ -1,20 +1,23 @@
 <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#<?php echo strtolower(get_the_title()) ?> tbody').on('click', 'tr', function() {
+            var id = $(this).attr("id").split("_")[1];
+            getProduct(id);
+        });
+    });
+
     async function getProduct(id) {
         const response = await fetch("http://localhost/food-api/API/product/getProduct.php?PRODUCT_ID=" + id)
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                //console.log(JSON.stringify(data, null, 3));
+                document.getElementById("product").innerHTML = JSON.stringify(data, null, 3);
                 return data;
             });
     }
-
-    $(window).on('load', function() {
-        $('#<?php echo strtolower(get_the_title()) ?> tbody').on('click', 'tr', function() {
-            var id = $(this).attr("id").split("_");
-            var product = getProduct(id[1]);
-        });
-    });
 </script>
+
+<p id="product"></p>
 
 <div class="row">
     <div class="position-relative">
