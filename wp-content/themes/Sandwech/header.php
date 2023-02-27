@@ -2,10 +2,11 @@
 
 include_once dirname(__FILE__) . '/php/login/checkLogin.php';
 include_once dirname(__FILE__) . '/php/navbar/search.php';
-global $user, $admin, $studente, $vendite, $mng;
+global $id, $user, $admin, $studente, $vendite, $mng;
 
 session_start();
 $user = checkLogin();
+$id = $user[0]->id;
 
 // utenti
 $admin = "admin@gmail.com";

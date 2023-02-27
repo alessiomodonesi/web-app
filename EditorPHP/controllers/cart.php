@@ -1,10 +1,6 @@
-<?php
+<?php $id = 1;
 
 include("../lib/DataTables.php");
-
-// prendo l'id dell'utente
-$id = 1;
-// $id = $user[0]->id;
 
 use
     DataTables\Editor,
