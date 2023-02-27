@@ -19,6 +19,7 @@ Editor::inst($db, 'product', 'ID')
     ->leftJoin('product_tag', 'product_tag.product', '=', 'product.ID')
     ->leftJoin('tag', 'tag.ID', '=', 'product_tag.tag')
     ->where('tag.name', 'piadine')
+    ->where('product.active', 1)
     ->debug(true)
     ->process($_POST)
     ->json();

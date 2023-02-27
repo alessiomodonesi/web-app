@@ -2,6 +2,10 @@
 
 include("../lib/DataTables.php");
 
+// prendo l'id dell'utente
+$id = 1;
+// $id = $user[0]->id;
+
 use
     DataTables\Editor,
     DataTables\Editor\Field;
@@ -31,7 +35,7 @@ Editor::inst($db, 'cart', 'user')
     )
     ->leftJoin('product', 'product.ID', '=', 'cart.product')
     ->leftJoin('user', 'user.ID', '=', 'cart.user')
-    //->where('cart.user', '1')
+    ->where('cart.user', $id)
     ->debug(true)
     ->process($_POST)
     ->json();
